@@ -1,0 +1,126 @@
+#contact {
+  .hidden {
+    display: none;
+    visibility: hidden;
+  }
+  .top {
+    border-bottom: none !important;
+  }
+  .right {
+    padding-bottom: 8vh !important;
+  }
+  .left > .sub-header {
+    flex-direction: column;
+  }
+  .sub-header {
+    .phone, .email {
+      margin: 4vh 0 0 0;
+    }
+    .phone, .email, .skype {
+      color: #C90059 !important;
+      opacity: 0.7 !important;
+      transition: opacity 1s;
+      margin-right: auto;
+      &:hover {
+        opacity: 1 !important;
+      }
+      i {
+        margin: 0 1vw 0 0 !important;
+      }
+    }
+  }
+  .message {
+    font-size: 3.6vh;
+    margin: 2vh 0;
+    color: #701D5F;
+  }
+  form {
+    ul {
+      li {
+        display: flex;
+        flex-direction: column;
+        label {
+          font-weight: bold;
+          font-size: 1.7vh;
+          margin: 1vh 0;
+          color: lighten(black, 40%);
+        }
+        input {
+          padding: 1.5vh 2vw;
+          margin: 1vh 0 2vh;
+          width: 60%;
+        }
+        textarea {
+          padding: 1.5vh 2vw;
+          margin: 1vh 0 2vh;
+          resize: none;
+          min-height: 18vh;
+          width: 100%;
+        }
+        input, textarea {
+          font-size: 1.5vh;
+          border-radius: 4px;
+          cursor: pointer;
+          outline: none;
+          border: solid 1px lighten(black, 85%);
+          transition: border-color 1s;
+          &:hover, &:focus {
+            border-color: lighten(black, 75%);
+          }
+          &:focus {
+            -webkit-box-shadow: 2px 2px 5px 2px rgba(250,250,250,0.8);
+            -moz-box-shadow: 2px 2px 5px 2px rgba(250,250,250,0.8);
+            box-shadow: 2px 2px 5px 2px rgba(250,250,250,0.8);
+          }
+        }
+      }
+    }
+    button {
+      width: 20%;
+      padding: 1.5vh 2vw;
+      margin: 4vh 0 -4vh auto;
+      border-radius: 4px;
+      border: solid 1px #C90059;//#701D5F;//lighten(black, 90%);
+      background-color: white;
+      color: #C90059;
+      cursor: pointer;
+      transition: background-color 1s;
+      &:hover {
+        background-color: rgba(240,240,240,0.8);
+        -webkit-box-shadow: 2px 2px 5px 2px rgba(250,250,250,0.8);
+        -moz-box-shadow: 2px 2px 5px 2px rgba(250,250,250,0.8);
+        box-shadow: 2px 2px 5px 2px rgba(250,250,250,0.8);
+      }
+    }
+  }
+}
+@media screen and (min-width: 769px) {
+  #contact {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    .sub-content.top {
+      width: 100%;
+      border-bottom: none;
+      padding-bottom: 1vh !important;
+      .sub-header {
+        flex-direction: row;
+      }
+    }
+    .left {
+      width: 30%;
+      text-align: right;
+      P { margin-right: 0.75vw; }
+      .phone, .email, .skype {
+        margin-left: auto;
+        margin-right: 0;
+        i {
+          margin-right: 0.5vw !important;
+        }
+      }
+    }
+    .right {
+      width: 70%;
+    }
+  }
+}
