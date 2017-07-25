@@ -4,6 +4,7 @@ import { VARS } from "../../VARS";
 import { NavLink } from "react-router-dom";
 
 class Footer extends Component {
+
   render() {
     return (
       <div id="footer">
@@ -12,7 +13,7 @@ class Footer extends Component {
           <a href="http://www.github.com/jjrajani" target="blank"><i className="fa fa-github" aria-hidden="true"/>Github</a>
         </div>
         <div className="center">
-          <a href="#app"><i className="fa fa-long-arrow-up"></i></a>
+          <a href="" onClick={this.scrollUp.bind(this)}><i className="fa fa-long-arrow-up"></i></a>
         </div>
         <div className="right">
           <div className="footer_inner_right">
@@ -27,6 +28,12 @@ class Footer extends Component {
       </div>
     );
   }
+
+  scrollUp (e) {
+    e.preventDefault();
+    document.getElementById('app').scrollIntoView()
+  }
+  
 }
 
 export default Footer;

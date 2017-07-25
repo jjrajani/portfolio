@@ -36,7 +36,7 @@ export const PROJECTS = {
     technology: ["React", "SASS", "Express", "MongoDB", "Socket.io", "RabbitMQ", "Webpack"],
   },
   CulturaLink: {
-    appTitle: "CulturaLink Interpretation",
+    appTitle: "CulturaLink",
     blurb: "ClutraLink was my first professional project. I performed as the sole frontend developer. The app is a complete business solution providing CulturaLink not only with Video, Voice, and Document Translation Services but also Billing Reports, Revenue Charts and CSV Reports, Client and Interpreter Management, Permissions, and Individual Portals for Client, Admin, and Interpreter access.",
     client: "CulturaLink, Atlanta",
     details: ["Frontend Development", "Web Design"],
@@ -44,6 +44,7 @@ export const PROJECTS = {
       main: "React",
       all: [""]
     },
+    link: "http://theculturalink.com/",
     scale: "Large-Scale Application",
     screenShot: SCREEN_SHOTS.culturaLink,
     stackLevels: ["Professional", "Frontend", "Fullstack"],
@@ -89,6 +90,7 @@ export const PROJECTS = {
       main: "Angular",
       all: [""]
     },
+    link: "http://my-garden.surge.sh/#/",
     scale: "Personal",
     screenShot: SCREEN_SHOTS.myGarden,
     stackLevels: ["Personal", "Frontend", "Fullstack"],
@@ -103,6 +105,7 @@ export const PROJECTS = {
       main: "JavaScript",
       all: [""]
     },
+    link: "http://cage-smash.surge.sh/",
     scale: "Personal",
     screenShot: SCREEN_SHOTS.cageSmash,
     stackLevels: ["Personal", "Frontend"],

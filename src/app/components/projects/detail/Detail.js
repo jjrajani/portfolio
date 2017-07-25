@@ -28,7 +28,7 @@ class Detail extends Component {
              <p><span className="bold">Client: </span>{project.client}</p>
              { this._projectDetails(project.details) }
              { this._projectTechnology(project.technology) }
-             { project.link ? <p><span className="bold">Live Site: </span><a href={project.link} target="blank">{project.title}</a></p> : null }
+             { project.link ? <p><span className="bold">Live Site: </span><a href={project.link} target="blank">{project.appTitle}</a></p> : null }
            </div>
            <div className="right">
              <div className="screen-shot">

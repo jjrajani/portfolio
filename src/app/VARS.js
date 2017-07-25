@@ -1,4 +1,4 @@
-const GITHUB = true;
+const GITHUB = false;
 
 export const VARS = {
   redirect: (GITHUB === true ? "/portfolio" : "/"),
