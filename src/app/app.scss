@@ -1,13 +1,13 @@
 #app {
   .app-header {
-    padding: 0 5vw 1vh;
+    padding: 0 5vw 0.8rem;
     .left {
       display: flex;
       flex-direction: column;
-      padding: 0 0 3vh 0;
+      padding: 0 0 2rem 0;
       .bottom {
-        font-size: 1.4vh;
-        margin-top: 1vh;
+        font-size: 0.7rem;
+        margin-top: 0.8rem;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -17,7 +17,7 @@
           transition: opacity 0.75s;
         }
         a {
-          font-size: 2vh;
+          font-size: 1.2rem;
           &:hover {
             opacity: 1;
           }
@@ -25,9 +25,9 @@
       }
     }
     .name {
-      font-size: 4vh;
+      font-size: 2.05rem;
       font-family: 'Oxygen', sans-serif;
-      padding: 7vh 3vw 1vh 0vw;
+      padding: 3.7rem 3vw 0.5rem 0vw;
       color: #701D5F;
       border-bottom: solid 1px #701D5F;
       // BC0097 bright purple
@@ -38,12 +38,12 @@
     }
   }
   .main-content {
-    margin: 2vh 5vw;
-    font-size: 1.6vh;
+    margin: 1rem 5vw;
+    font-size: 0.825rem;
     font-weight: 300;
     border-top: solid 1px #cccccc;
     .sub-content {
-      padding: 1.8vh 0 1.8vh 0;
+      padding: 0.925rem 0;
       border-bottom: solid 1px lighten(black, 80%);
       .sub-header {
         display: flex;
@@ -52,7 +52,7 @@
           font-style: italic;
           // color: lighten(black, 50%);
           cursor: pointer;
-          padding: 0 0.75vw 0.25vh 0.75vw;
+          padding: 0 0.75vw 0.1rem 0.75vw;
           transition: color 0.5s;
           &:hover {
             // color: lighten(black, 20%);

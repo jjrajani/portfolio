@@ -1,11 +1,11 @@
 #footer {
   display: flex;
-  margin: 0 5vw 8vh;
-  padding: 2vh 0 0 0;
+  margin: 0 5vw 4rem;
+  padding: 0.8rem 0 0 0;
   justify-content: space-between;
   p, a {
-    font-size: 1.6vh;
-    padding: 0.5vh 0;
+    font-size: 0.8rem;
+    padding: 0.2rem 0;
     color: #701D5F;
     transition: opacity 0.5s;
     opacity: 0.5;
@@ -24,7 +24,7 @@
     justify-content: flex-start;
     align-items: flex-start;
     a {
-      padding: 0.5vh 1vw !important;
+      padding: 0.25rem 1vw !important;
     }
     &.center {
       align-items: center;

@@ -6,15 +6,15 @@
   .sub-content.top {
     width: 100%;
     border-bottom: none;
-    padding-bottom: 1.8vh !important;
+    padding-bottom: 0.9rem !important;
   }
   #frontend {
-    padding-bottom: 3vh !important;
+    padding-bottom: 1.6rem !important;
   }
   .resume_download {
     font-style: normal !important;
-    margin: 1vh 0 2vh;
-    padding: 1vh 0 !important;
+    margin: 0.55rem 0 1rem;
+    padding: 0.5rem 0 !important;
     cursor: pointer;
     a {
       color: #C90059 !important;
@@ -28,7 +28,7 @@
     display: flex;
     flex-direction: column;
     a {
-      margin: 0 0 2vh 2vw;
+      margin: 0 0 1rem 2vw;
       color: #701D5F;
       cursor: pointer;
       transition: color 1s;
@@ -42,8 +42,8 @@
   }
   .sub-content {
     .title {
-      font-size: 2.9vh;
-      padding: 1vh 0 2vh;
+      font-size: 1.5rem;
+      padding: 0.5rem 0 1rem;
     }
     p {
       color: lighten(black, 25%);
@@ -68,11 +68,11 @@
       }
     }
     p:nth-child(1n + 2) {
-      padding: 0.5vh 0;
+      padding: 0.25rem 0;
     }
   }
   #travels {
-    padding-bottom: 6vh !important;
+    padding-bottom: 3.2rem !important;
     border-bottom: none !important;
   }
 }

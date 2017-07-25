@@ -7,14 +7,14 @@
     border-bottom: none !important;
   }
   .right {
-    padding-bottom: 8vh !important;
+    padding-bottom: 37px !important;
   }
   .left > .sub-header {
     flex-direction: column;
   }
   .sub-header {
     .phone, .email {
-      margin: 4vh 0 0 0;
+      margin: 2rem 0 0 0;
     }
     .phone, .email, .skype {
       color: #C90059 !important;
@@ -30,8 +30,8 @@
     }
   }
   .message {
-    font-size: 3.6vh;
-    margin: 2vh 0;
+    font-size: 1.85rem;
+    margin: 1.1rem 0;
     color: #701D5F;
   }
   form {
@@ -41,24 +41,24 @@
         flex-direction: column;
         label {
           font-weight: bold;
-          font-size: 1.7vh;
-          margin: 1vh 0;
+          font-size: 0.825rem;
+          margin: 0.525rem 0;
           color: lighten(black, 40%);
         }
         input {
-          padding: 1.5vh 2vw;
-          margin: 1vh 0 2vh;
+          padding: 0.775rem 2vw;
+          margin: 0.525rem 0 0.95rem;
           width: 60%;
         }
         textarea {
-          padding: 1.5vh 2vw;
-          margin: 1vh 0 2vh;
+          padding: 0.775rem 2vw;
+          margin: 0.525rem 0 0.95rem;
           resize: none;
-          min-height: 18vh;
+          min-height: 150px;
           width: 100%;
         }
         input, textarea {
-          font-size: 1.5vh;
+          font-size: 0.8rem;
           border-radius: 4px;
           cursor: pointer;
           outline: none;
@@ -77,8 +77,8 @@
     }
     button {
       width: 20%;
-      padding: 1.5vh 2vw;
-      margin: 4vh 0 -4vh auto;
+      padding: 0.8rem 2vw;
+      margin: 33px 0 -20px auto;
       border-radius: 4px;
       border: solid 1px #C90059;//#701D5F;//lighten(black, 90%);
       background-color: white;
@@ -102,7 +102,7 @@
     .sub-content.top {
       width: 100%;
       border-bottom: none;
-      padding-bottom: 1vh !important;
+      padding-bottom: 0.5rem !important;
       .sub-header {
         flex-direction: row;
       }

@@ -1,12 +1,12 @@
 #home {
   .right {
-    padding-bottom: 8vh !important;
+    padding-bottom: 4rem !important;
   }
   .title-wrapper {
-    padding: 6vh 0 2vh 0;
+    padding: 3.1rem 0 1rem 0;
     .title {
       text-align: right;
-      font-size: 3.8vh;
+      font-size: 1.95rem;
       font-family: 'Oxygen', sans-serif;
       color: lighten(black, 20%);
       color: #701D5F;
@@ -14,21 +14,21 @@
 
       }
       &.two {
-        margin: -0.6vh 0 0 0;
-        line-height: 3.5vh;
+        margin: -0.3rem 0 0 0;
+        line-height: 2rem;
       }
     }
   }
   .top {
-    padding-bottom: 4vh !important;
+    padding-bottom: 2rem !important;
   }
   .blurb-wrapper {
     font-weight: 400;
     color: lighten(black, 35%);
-    padding-bottom: 3vh;
+    padding-bottom: 1.6rem;
     .blurb {
-      padding-bottom: 2vh;
-      line-height: 2.2vh;
+      padding-bottom: 1rem;
+      line-height: 1.15rem;
     }
   }
   .home-image {
@@ -42,17 +42,17 @@
   .projects {
     display: flex;
     flex-wrap: wrap;
-    padding-top: 3vh;
+    padding-top: 1.6rem;
     a {
       width: 48%;
-      margin: 2vh 1% 0;
+      margin: 1.025rem 1% 0;
     }
     .project {
-      margin-bottom: -1vh;
+      margin-bottom: -0.6rem;
       width: 100%;
       background-color: white;
       transition: background-color 1s;
-      padding-bottom: 1vh;
+      padding-bottom: 0.6rem;
       &:hover {
         background-color: lighten(black, 96%);
         p {
@@ -61,8 +61,8 @@
       }
       p {
         transition: color 0.75s;
-        margin: 1vh 5%;
-        font-size: 1.6vh;
+        margin: 0.55rem 5%;
+        font-size: 0.825rem;
         color: #701D5F;
         &.title {
           font-weight: 600;
@@ -89,7 +89,7 @@
 @media screen and (max-width: 769px) {
   #home {
     .top {
-      padding-bottom: 7vh !important;
+      padding-bottom: 55px !important;
     }
   }
 }
@@ -102,7 +102,7 @@
       justify-content: space-between;
       .sub-header {
         width: 100%;
-        margin-bottom: 3vh;
+        margin-bottom: 1.6rem;
       }
       .left, .right {
         width: 48%;
