@@ -91,15 +91,10 @@ class Resume extends Component {
     );
   }
 
-
-
-
   scrollToPosition (y, e) {
     e.preventDefault();
     window.scrollTo(0, y);
   }
-
-
 
 }
 
