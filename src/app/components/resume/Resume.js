@@ -28,14 +28,14 @@ class Resume extends Component {
               <a href={resumeLink} target="blank"><i className="fa fa-file-pdf-o" aria-hidden="true"></i>Dowload PDF</a>
             </div>
             <div className="sub-nav">
-              <a href="#frontend">Frontend</a>
-              <a href="#design">Design</a>
-              <a href="#backend">Backend</a>
-              <a href="#frameworks">Frameworks</a>
-              <a href="#build_tools">Build Tools</a>
-              <a href="#environments">Environments</a>
-              <a href="#education">Education</a>
-              <a href="#travels">Travels</a>
+              <a href="" onClick={this.scrollToPosition.bind(this, 260)}>Frontend</a>
+              <a href="" onClick={this.scrollToPosition.bind(this, 380)}>Design</a>
+              <a href="" onClick={this.scrollToPosition.bind(this, 500)}>Backend</a>
+              <a href="" onClick={this.scrollToPosition.bind(this, 500)}>Frameworks</a>
+              <a href="" onClick={this.scrollToPosition.bind(this, 500)}>Build Tools</a>
+              <a href="" onClick={this.scrollToPosition.bind(this, 500)}>Environments</a>
+              <a href="" onClick={this.scrollToPosition.bind(this, 500)}>Education</a>
+              <a href="" onClick={this.scrollToPosition.bind(this, 500)}>Travels</a>
             </div>
           </div>
           <div className="sub-content right">
@@ -90,6 +90,17 @@ class Resume extends Component {
       </div>
     );
   }
+
+
+
+
+  scrollToPosition (y, e) {
+    e.preventDefault();
+    window.scrollTo(0, y);
+  }
+
+
+
 }
 
 export default Resume;
