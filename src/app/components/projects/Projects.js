@@ -40,9 +40,6 @@ class Projects extends Component {
             { this._subNav() }
           </div>
           <div className="sub-content right">
-            <div className="sub-header">
-              <Link to="/portfolio/contact">Contact <i className="fa fa-angle-right" aria-hidden="true"></i></Link>
-            </div>
             { this._projects() }
           </div>
         </div>
