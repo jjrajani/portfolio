@@ -1,0 +1,34 @@
+
+// BC0097 bright purple
+// 701D5F dark purple
+// 936080 mid grey purple
+// 9B768E light purple
+$red: #C90059; // red
+#nav {
+  display: flex;
+  a {
+    padding: 0.3rem 2vw;
+    margin: 0 0 1rem 0;
+    font-size: 0.8rem;
+    transition: opacity 0.5s;
+    font-weight: normal;
+    color: #701D5F;
+    &.active {
+      border-bottom: solid 1px #cccccc;
+      color: #C90059;
+      font-weight: bold;
+      &:hover {
+        opacity: 1;
+      }
+    }
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+}
+
+@media screen and (min-width: 769px) {
+  #nav {
+    align-self: flex-end;
+  }
+}
