@@ -14,7 +14,6 @@ import {
     Home,
     Projects,
     Resume,
-    ResumeRefac,
     Nav,
     Footer
 } from './components';
@@ -67,11 +66,6 @@ class App extends Component {
                             exact
                             path={VARS.routePrefix + '/resume'}
                             component={Resume}
-                        />
-                        <Route
-                            exact
-                            path={VARS.routePrefix + '/resume_refac'}
-                            component={ResumeRefac}
                         />
                         <Route
                             exact
