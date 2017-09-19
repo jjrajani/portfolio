@@ -12,7 +12,7 @@ export const RESUME = [
     },
     {
         title: 'Backend',
-        scrollPoint: 500,
+        scrollPoint: 475,
         skills: 'Node.js, Express, Mongoose, Sequelize, Jade/Pug'
     },
     {
