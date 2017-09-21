@@ -1,11 +1,16 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import { setAndSendPageview } from '../../utils/googleAnalytics';
 import { VARS } from '../../VARS';
 import './resume.scss';
 import { RESUME } from './resumeData';
 const resume = require('../../assets/Resume.pdf');
 
 class ResumeRefac extends Component {
+    constructor(props) {
+        super(props);
+        setAndSendPageview(window, '/resume');
+    }
     componentDidMount() {
         window.scrollTo(0, 0);
     }

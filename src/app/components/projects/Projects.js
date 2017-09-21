@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import { setAndSendPageview } from '../../utils/googleAnalytics';
 import { VARS } from '../../VARS';
 import './projects.scss';
 import { PROJECTS, LAPTOP } from './projectsData';
@@ -12,6 +13,7 @@ class Projects extends Component {
         this.state = {
             mode: 'All'
         };
+        setAndSendPageview(window, '/projects');
     }
 
     componentDidMount() {
