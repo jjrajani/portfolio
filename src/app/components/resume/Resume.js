@@ -4,7 +4,6 @@ import { setAndSendPageview } from '../../utils/googleAnalytics';
 import { VARS } from '../../VARS';
 import './resume.scss';
 import { RESUME } from './resumeData';
-const resume = require('../../assets/Resume.pdf');
 
 class ResumeRefac extends Component {
     constructor(props) {
@@ -17,9 +16,7 @@ class ResumeRefac extends Component {
 
     downloadResumeLink() {
         const resumeLink =
-            VARS.github === true
-                ? resume
-                : 'https://jjrajani.github.io/portfolio/static/media/Resume.ab7b824e.pdf';
+            'https://docs.google.com/document/d/1yOKCl-K9FTa4ZWGj-j4S-yJ5dAlAgG4H0Qpb6lrJFcg/edit?usp=sharing';
         return (
             <a href={resumeLink} target="blank">
                 <i className="fa fa-file-pdf-o" aria-hidden="true" />Dowload PDF
