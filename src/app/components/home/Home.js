@@ -5,7 +5,7 @@ import { VARS } from '../../VARS';
 import './home.scss';
 const logo = require('../../assets/lost-in-the-trees.png');
 const culturaLink = require('../../assets/culturalink.png');
-const ADP = require('../../assets/ADP.png');
+const theLabz = require('../../assets/the_labz.png');
 const mailChimp = require('../../assets/mail-chimp.png');
 const twinBridgesLake = require('../../assets/twin_bridges_lake.png');
 const laptop = `https://placeit.net/uploads/stage/stage_image/288/default_apple-2012-15-inch-macbook-pro-retina-big.png`;
@@ -47,8 +47,8 @@ class Home extends Component {
                                     applications.
                                 </p>
                                 <p className="blurb">
-                                    I have contributed to several large-scale
-                                    applications and many small, design
+                                    I have built several large-scale
+                                    applications as well as many small, design
                                     centered, applications. When I&#8216;m not
                                     coding you&#8216;ll find me either playing
                                     paino or planning my next excurssion.
@@ -73,6 +73,26 @@ class Home extends Component {
                             </Link>
                         </div>
                         <div className="projects">
+                            <Link to={VARS.routePrefix + '/project/theLabz'}>
+                                <div className="project">
+                                    <div className="screen-shot">
+                                        <img
+                                            className="image"
+                                            src={theLabz}
+                                            alt="CulturaLink screen shot"
+                                        />
+                                        <img
+                                            className="laptop"
+                                            src={laptop}
+                                            alt="Laptop"
+                                        />
+                                    </div>
+                                    <p className="title">
+                                        The Labz Music Collaboration
+                                    </p>
+                                    <p className="language">MERN</p>
+                                </div>
+                            </Link>
                             <Link
                                 to={
                                     VARS.routePrefix +
@@ -93,26 +113,6 @@ class Home extends Component {
                                         />
                                     </div>
                                     <p className="title">Twin Bridges Lake</p>
-                                    <p className="language">React</p>
-                                </div>
-                            </Link>
-                            <Link to={VARS.routePrefix + '/project/ADP'}>
-                                <div className="project">
-                                    <div className="screen-shot">
-                                        <img
-                                            className="image"
-                                            src={ADP}
-                                            alt="CulturaLink screen shot"
-                                        />
-                                        <img
-                                            className="laptop"
-                                            src={laptop}
-                                            alt="Laptop"
-                                        />
-                                    </div>
-                                    <p className="title">
-                                        ADP Monitoring Services
-                                    </p>
                                     <p className="language">React</p>
                                 </div>
                             </Link>
@@ -151,7 +151,9 @@ class Home extends Component {
                                         />
                                     </div>
                                     <p className="title">MailChimp</p>
-                                    <p className="language">Ruby on Rails</p>
+                                    <p className="language">
+                                        JavaScript / SASS
+                                    </p>
                                 </div>
                             </Link>
                         </div>

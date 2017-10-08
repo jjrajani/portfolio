@@ -10,13 +10,45 @@ export const SCREEN_SHOTS = {
     pineapple: require('../../assets/pineapple.png'),
     humdrumGrill: require('../../assets/humdrum_grill.png'),
     responseiveMessage: require('../../assets/responseive_message.png'),
-    twinBridgesLake: require('../../assets/twin_bridges_lake.png')
+    twinBridgesLake: require('../../assets/twin_bridges_lake.png'),
+    theLabz: require('../../assets/the_labz.png')
 };
 export const PROJECTS = {
+    theLabz: {
+        appTitle: 'The Labz',
+        blurb:
+            'My previous project manager approached me asking for assistance in building a protype for his first startup.  With two weeks before his first demo, I hit create-react-app and got to work on this music collaboration tool.',
+        client: 'The Labz, Atlanta GA',
+        details: ['Fullstack Development', 'Web Design'],
+        features: [
+            {
+                title: 'Audio Visualizer',
+                img: ''
+            }
+        ],
+        languages: {
+            main: 'MERN',
+            all: ['Express, Bootstrap, React Bootstrap, SASS']
+        },
+        link: 'https://thereallabz.now.sh',
+        scale: 'Rapid Prototype',
+        screenShot: SCREEN_SHOTS.theLabz,
+        stackLevels: ['Professional', 'Frontend', 'Fullstack'],
+        technology: [
+            'React',
+            'Redux',
+            'SASS',
+            'Express',
+            'MongoDB',
+            'Webpack',
+            'Audio Web API'
+        ]
+    },
+
     twinBridgesLake: {
         appTitle: 'Twin Bridges Lake',
         blurb:
-            'A react application built for Twin Bridges Lake pay fishing lake.  A small business solution.',
+            'A react application built for Twin Bridges Lake pay fishing lake.',
         client: 'Twin Bridges Lake, Lawrenceville GA',
         details: ['Frontend Development', 'Web Design', 'Bootstrap'],
         features: [
@@ -34,7 +66,7 @@ export const PROJECTS = {
             all: ['Bootstrap, React Bootstrap, SASS']
         },
         link: 'http://www.twinbridgeslake.fish',
-        scale: 'Small-Scale Application',
+        scale: 'Small Business Solution',
         screenShot: SCREEN_SHOTS.twinBridgesLake,
         stackLevels: ['Professional', 'Frontend', 'Fullstack'],
         technology: [
@@ -71,8 +103,8 @@ export const PROJECTS = {
             }
         ],
         languages: {
-            main: 'React',
-            all: ['']
+            main: 'MERN',
+            all: ['React, Express, SASS']
         },
         scale: 'Large-Scale Application',
         screenShot: SCREEN_SHOTS.ADP,
@@ -84,32 +116,6 @@ export const PROJECTS = {
             'MongoDB',
             'Socket.io',
             'RabbitMQ',
-            'Webpack'
-        ]
-    },
-    culturaLink: {
-        appTitle: 'CulturaLink',
-        blurb:
-            'ClutraLink was my first professional project. I performed as the sole frontend developer. The app is a complete business solution providing CulturaLink not only with Video, Voice, and Document Translation Services but also Billing Reports, Revenue Charts and CSV Reports, Client and Interpreter Management, Permissions, and Individual Portals for Client, Admin, and Interpreter access.',
-        client: 'CulturaLink, Atlanta',
-        details: ['Frontend Development', 'Web Design'],
-        languages: {
-            main: 'React',
-            all: ['']
-        },
-        link: 'http://theculturalink.com/',
-        scale: 'Large-Scale Application',
-        screenShot: SCREEN_SHOTS.culturaLink,
-        stackLevels: ['Professional', 'Frontend', 'Fullstack'],
-        technology: [
-            'React',
-            'TypeScript',
-            'Express',
-            'Sequelize',
-            'Jest',
-            'HighCharts',
-            'socket.io',
-            'Videyo',
             'Webpack'
         ]
     },
@@ -146,6 +152,32 @@ export const PROJECTS = {
         screenShot: SCREEN_SHOTS.PSP,
         stackLevels: ['Professional', 'Frontend'],
         technology: ['Agnular2', '.NET Core', 'SASS', 'Gulp']
+    },
+    culturaLink: {
+        appTitle: 'CulturaLink',
+        blurb:
+            'ClutraLink was my first professional project. I performed as the sole frontend developer. The app is a complete business solution providing CulturaLink not only with Video, Voice, and Document Translation Services but also Billing Reports, Revenue Charts and CSV Reports, Client and Interpreter Management, Permissions, and Individual Portals for Client, Admin, and Interpreter access.',
+        client: 'CulturaLink, Atlanta',
+        details: ['Frontend Development', 'Web Design'],
+        languages: {
+            main: 'React',
+            all: ['']
+        },
+        link: 'http://theculturalink.com/',
+        scale: 'Large-Scale Application',
+        screenShot: SCREEN_SHOTS.culturaLink,
+        stackLevels: ['Professional', 'Frontend', 'Fullstack'],
+        technology: [
+            'React',
+            'TypeScript',
+            'Express',
+            'Sequelize',
+            'Jest',
+            'HighCharts',
+            'socket.io',
+            'Videyo',
+            'Webpack'
+        ]
     },
     myGarden: {
         appTitle: 'myGarden',

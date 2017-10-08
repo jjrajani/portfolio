@@ -99,10 +99,10 @@ class Projects extends Component {
                         />
                         <img className="laptop" src={LAPTOP} alt="Laptop" />
                     </div>
-                    <p className="title">
+                    <p className={`title ${mode}`}>
                         {project.appTitle}
                     </p>
-                    <p className="language">
+                    <p className={`language ${mode}`}>
                         {project.languages.main}
                     </p>
                 </Link>
