@@ -40,7 +40,7 @@ class Home extends Component {
                             </div>
                             <div className="blurb-wrapper">
                                 <p className="blurb">
-                                    {`I'm Jenna Rajani and love code for
+                                    {`I'm Jenna Rajani and I love code for
                                   it's endless possibility.`}
                                 </p>
                                 <p className="blurb">

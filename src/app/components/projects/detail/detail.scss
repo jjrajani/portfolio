@@ -1,75 +1,75 @@
 #detail {
-  .project {
-    padding-top: 1rem;
-    padding: 0 5%;
-    border-top: solid 1px lighten(black, 85%);
-    a {
-      color: lighten(black, 30%);
-    }
-    ul {
-      margin: 0 0 2rem 0;
-      :first-child {
-        margin-bottom: 0.25rem;
-      }
-      margin-top: 2rem;
-    }
-    p {
-      color: #701D5F;
-      margin: 0.5rem 0;
-      font-size: 0.8rem;
-      a {
-        color: #BC0097;
-      }
-      &.list-item {
-        margin-top: 0;
-        margin-bottom: 0.15rem;
-        line-height: 1.15rem;
-      }
-      &.app-title {
-        color: #BC0097;
-        font-size: 1.3rem;
-      }
-      &.blurb {
-        margin-top: 1.95rem !important;
-        margin-bottom: 1.95rem !important;
-        line-height: 1.15rem;
-        letter-spacing: 0.02rem;
-      }
-      &.astrisk {
-        margin-top: -1.5rem;
-        margin-bottom: 2rem;
-        color: lighten(#701D5F, 50%);
-        font-size: 0.675rem;
-      }
-      .bold {
-        font-weight: bold;
-      }
-    }
-    .screen-shot {
-      position: relative;
-      .laptop {
-        width: 100%;
-      }
-      .image {
-        position: absolute;
-        width: 72.25%;
-        top: 19%;
-        left: 14%;
-        border-radius: 2px;
-      }
-    }
-  }
-  @media screen and (min-width: 769px) {
     .project {
-      display: flex;
-      margin: 0 5vw;
-      padding: 2.5rem 0;
-      .left {
-        width: 30%;
-      }
-      .right {
-        width: 70%;
-      }
+        padding-top: 1rem;
+        padding: 0 5%;
+        border-top: solid 1px lighten(black, 85%);
+        a {
+            color: lighten(black, 30%);
+        }
+        ul {
+            margin: 0 0 2rem 0;
+            :first-child {
+                margin-bottom: 0.25rem;
+            }
+            margin-top: 2rem;
+        }
+        p {
+            color: #701d5f;
+            margin: 0.5rem 0;
+            font-size: 0.8rem;
+            a {
+                color: #bc0097;
+            }
+            &.list-item {
+                margin-top: 0;
+                margin-bottom: 0.15rem;
+                line-height: 1.15rem;
+            }
+            &.app-title {
+                color: #bc0097;
+                font-size: 1.3rem;
+            }
+            &.blurb {
+                margin-top: 1.95rem !important;
+                margin-bottom: 1.95rem !important;
+                line-height: 1.15rem;
+                letter-spacing: 0.02rem;
+            }
+            &.astrisk {
+                margin-top: -1.5rem;
+                margin-bottom: 2rem;
+                color: lighten(#701d5f, 35%);
+                font-size: 0.7rem;
+            }
+            .bold {
+                font-weight: bold;
+            }
+        }
+        .screen-shot {
+            position: relative;
+            .laptop {
+                width: 100%;
+            }
+            .image {
+                position: absolute;
+                width: 72.25%;
+                top: 19%;
+                left: 14%;
+                border-radius: 2px;
+            }
+        }
     }
-  }
+    @media screen and (min-width: 769px) {
+        .project {
+            display: flex;
+            margin: 0 5vw;
+            padding: 2.5rem 0;
+            .left {
+                width: 30%;
+            }
+            .right {
+                width: 70%;
+            }
+        }
+    }
 }

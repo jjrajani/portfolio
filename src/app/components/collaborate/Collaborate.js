@@ -52,7 +52,7 @@ class Collaborate extends Component {
                                 </p>
                                 <p className="blurb">
                                     <span className="bold">
-                                        Gumption unparalleled.
+                                        Unparalleled gumption.
                                     </span>
                                     {` The word impossible means nothing to me.`}
                                 </p>
@@ -60,7 +60,7 @@ class Collaborate extends Component {
                                     <span className="bold">
                                         We should work together
                                     </span>
-                                    {` if you enjoy hard work, learning something new, and always being better than yesterday.`}
+                                    {` if you enjoy hard work, continuous learning, and always being better than yesterday.`}
                                 </p>
                             </div>
                         </div>
