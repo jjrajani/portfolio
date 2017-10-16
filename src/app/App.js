@@ -15,6 +15,7 @@ import {
     Projects,
     Resume,
     Nav,
+    Collaborate,
     Footer
 } from './components';
 
@@ -81,6 +82,11 @@ class App extends Component {
                             exact
                             path={VARS.routePrefix + '/contact'}
                             component={Contact}
+                        />
+                        <Route
+                            exact
+                            path={VARS.routePrefix + '/collaborate'}
+                            component={Collaborate}
                         />
                     </Switch>
                     <Footer />

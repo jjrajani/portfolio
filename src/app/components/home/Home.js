@@ -40,18 +40,22 @@ class Home extends Component {
                             </div>
                             <div className="blurb-wrapper">
                                 <p className="blurb">
-                                    I&#8216;m Jenna Rajani and love code for
-                                    it&#8216;s endless possibility. I enjoy
-                                    focusing on the user-experience as well as
-                                    process efficiency while creating web
-                                    applications.
+                                    {`I'm Jenna Rajani and love code for
+                                  it's endless possibility.`}
                                 </p>
                                 <p className="blurb">
-                                    I have built several large-scale
+                                    {`I have built several large-scale
                                     applications as well as many small, design
-                                    centered, applications. When I&#8216;m not
-                                    coding you&#8216;ll find me either playing
-                                    paino or planning my next excurssion.
+                                    centered, applications. When I'm not
+                                    coding you'll find me either playing
+                                    paino or planning my next excurssion.`}
+                                </p>
+                                <p className="blurb">
+                                    <Link
+                                        to={VARS.routePrefix + '/collaborate'}
+                                    >
+                                        {`I am currently seeking my next project!`}
+                                    </Link>
                                 </p>
                             </div>
                         </div>

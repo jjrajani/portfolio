@@ -4,6 +4,7 @@ import { setAndSendPageview } from '../../utils/googleAnalytics';
 import { VARS } from '../../VARS';
 import './resume.scss';
 import { RESUME } from './resumeData';
+const code = require('../../assets/code_two.jpg');
 
 class ResumeRefac extends Component {
     constructor(props) {
@@ -114,6 +115,12 @@ class ResumeRefac extends Component {
                         </div>
                     </div>
                     <div className="sub-content right">
+                        <div
+                            className="resume img"
+                            style={{
+                                backgroundImage: `url(${code})`
+                            }}
+                        />
                         {this.renderSkills()}
                         {this.renderEducation()}
                         {this.renderTravels()}

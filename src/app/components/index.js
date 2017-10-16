@@ -4,6 +4,7 @@ import Projects from './projects/Projects';
 import Resume from './resume/Resume';
 import Nav from './nav/Nav';
 import Detail from './projects/detail/Detail';
+import Collaborate from './collaborate/Collaborate';
 import Footer from './footer/Footer';
 
-export { Contact, Home, Projects, Resume, Nav, Detail, Footer };
+export { Contact, Home, Projects, Resume, Nav, Detail, Collaborate, Footer };

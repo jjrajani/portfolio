@@ -1,19 +1,33 @@
 import React, { Component } from 'react';
 import './nav.scss';
-import { VARS } from "../../VARS";
+import { VARS } from '../../VARS';
 import { NavLink } from 'react-router-dom';
 
+const links = [
+    { href: '/home', text: 'Home' },
+    { href: '/resume', text: 'Resumé' },
+    { href: '/projects', text: `Projects` },
+    { href: '/collaborate', text: `Collaborate` },
+    { href: '/contact', text: `Contact` }
+];
+
 class Nav extends Component {
-  render() {
-    return (
-       <div id="nav">
-         <NavLink to={VARS.routePrefix + "/home"} activeClassName="active">Home</NavLink>
-         <NavLink to={VARS.routePrefix + "/resume"} activeClassName="active">Resum&#233;</NavLink>
-         <NavLink to={VARS.routePrefix + "/projects"} activeClassName="active">Projects</NavLink>
-         <NavLink to={VARS.routePrefix + "/contact"} activeClassName="active">Contact</NavLink>
-       </div>
-    );
-  }
+    render() {
+        return (
+            <div id="nav">
+                {links.map(l => {
+                    return (
+                        <NavLink
+                            to={VARS.routePrefix + l.href}
+                            activeClassName="active"
+                        >
+                            {l.text}
+                        </NavLink>
+                    );
+                })}
+            </div>
+        );
+    }
 }
 
 export default Nav;
