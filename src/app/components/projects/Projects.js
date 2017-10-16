@@ -27,8 +27,8 @@ class Projects extends Component {
                     <div className="sub-content top">
                         <div className="sub-header">
                             <p>Projects</p>
-                            <Link to={VARS.routePrefix + '/contact'}>
-                                Contact{' '}
+                            <Link to={VARS.routePrefix + '/collaborate'}>
+                                Collaborate{' '}
                                 <i
                                     className="fa fa-angle-right"
                                     aria-hidden="true"
