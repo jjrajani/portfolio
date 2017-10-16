@@ -1,48 +1,50 @@
+const maxScroll = 890;
+
 export const RESUME = [
     {
         title: 'Frontend',
-        scrollPoint: 260,
+        scrollPoint: 560,
         skills: 'JavaScript, TypeScript, React, AngularJS, jQuery, AJAX, REST'
     },
     {
         title: 'Design',
-        scrollPoint: 380,
+        scrollPoint: 680,
         skills:
             'Responsive Web Design, HTML, CSS3, SASS, Bootstrap, MaterializeCSS'
     },
     {
         title: 'Backend',
-        scrollPoint: 475,
+        scrollPoint: 775,
         skills: 'Node.js, Express, Mongoose, Sequelize, Jade/Pug'
     },
     {
         title: 'Databases',
-        scrollPoint: 590,
+        scrollPoint: maxScroll,
         skills: 'MongoDB, SQL, MySQL, Postgres'
     },
     {
         title: 'Libraries',
-        scrollPoint: 590,
+        scrollPoint: maxScroll,
         skills: 'Redux, Mobx, Axios, Lodash, Passport.js, HighCharts, Plotly.js'
     },
     {
         title: 'APIs',
-        scrollPoint: 590,
+        scrollPoint: maxScroll,
         skills: 'Google OAuth, Google Maps, YouTube, Spotify, Flickr'
     },
     {
         title: 'Build Tools',
-        scrollPoint: 590,
+        scrollPoint: maxScroll,
         skills: 'Webpack, Git, Gulp'
     },
     {
         title: 'Environments',
-        scrollPoint: 590,
+        scrollPoint: maxScroll,
         skills: 'Agile, SCRUM, Waterfall, Freelance'
     },
     {
         title: 'Education',
-        scrollPoint: 590,
+        scrollPoint: maxScroll,
         skills: [
             {
                 title: 'Frontend Engineering',
@@ -66,7 +68,7 @@ export const RESUME = [
     },
     {
         title: 'Travels',
-        scrollPoint: 590,
+        scrollPoint: maxScroll,
         skills: 'France, UK, Uganda, Rwanda, Costa Rica, 30 US States & Canada'
     }
 ];

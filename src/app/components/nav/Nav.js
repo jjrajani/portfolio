@@ -15,9 +15,10 @@ class Nav extends Component {
     render() {
         return (
             <div id="nav">
-                {links.map(l => {
+                {links.map((l, i) => {
                     return (
                         <NavLink
+                            key={i + l.text}
                             to={VARS.routePrefix + l.href}
                             activeClassName="active"
                         >

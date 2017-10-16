@@ -6,15 +6,26 @@ import './resume.scss';
 import { RESUME } from './resumeData';
 const code = require('../../assets/code_two.jpg');
 
-class ResumeRefac extends Component {
+class Resume extends Component {
     constructor(props) {
         super(props);
         setAndSendPageview(window, '/resume');
+        this.state = { fixedNav: false };
+        window.addEventListener('scroll', this.handleScroll);
     }
     componentDidMount() {
         window.scrollTo(0, 0);
     }
-
+    componentWillUnmount() {
+        window.removeEventListener('scroll', this.handleScroll, false);
+    }
+    handleScroll = e => {
+        if (window.scrollY > 251) {
+            this.setState({ fixedNav: true });
+        } else {
+            this.setState({ fixedNav: false });
+        }
+    };
     downloadResumeLink() {
         const resumeLink =
             'https://docs.google.com/document/d/1yOKCl-K9FTa4ZWGj-j4S-yJ5dAlAgG4H0Qpb6lrJFcg/edit?usp=sharing';
@@ -59,9 +70,9 @@ class ResumeRefac extends Component {
     renderEducation() {
         let schools = RESUME.filter(
             r => r.title === 'Education'
-        )[0].skills.map(s => {
+        )[0].skills.map((s, i) => {
             return (
-                <p>
+                <p key={i}>
                     <span className="bold">{s.title} </span>
                     <a href={s.linkURL} target="blank">
                         {s.linkText}{' '}
@@ -107,11 +118,13 @@ class ResumeRefac extends Component {
                         </div>
                     </div>
                     <div className="sub-content left">
-                        <div className="resume_download">
-                            {this.downloadResumeLink()}
-                        </div>
-                        <div className="sub-nav">
-                            {this.renderLinks()}
+                        <div className={this.state.fixedNav ? 'fixed' : ''}>
+                            <div className="resume_download">
+                                {this.downloadResumeLink()}
+                            </div>
+                            <div className="sub-nav">
+                                {this.renderLinks()}
+                            </div>
                         </div>
                     </div>
                     <div className="sub-content right">
@@ -136,4 +149,4 @@ class ResumeRefac extends Component {
     }
 }
 
-export default ResumeRefac;
+export default Resume;

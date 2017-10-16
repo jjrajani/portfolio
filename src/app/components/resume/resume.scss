@@ -92,6 +92,10 @@
         display: flex;
         .left {
             width: 30%;
+            .fixed {
+                position: fixed;
+                top: 40px;
+            }
         }
         .right {
             width: 70%;
