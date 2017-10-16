@@ -17,6 +17,9 @@ $red: #c90059; // red
             margin: 0;
             padding: 2rem 0;
             height: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
             &:hover {
                 p.title,
                 p.language {
