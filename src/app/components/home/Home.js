@@ -53,6 +53,7 @@ class Home extends Component {
                                 <p className="blurb">
                                     <Link
                                         to={VARS.routePrefix + '/collaborate'}
+                                        className="highlight"
                                     >
                                         {`I am currently seeking my next project!`}
                                     </Link>
@@ -76,9 +77,9 @@ class Home extends Component {
                                 />
                             </Link>
                         </div>
-                        <div className="projects">
+                        <div className="projects list">
                             <Link to={VARS.routePrefix + '/project/theLabz'}>
-                                <div className="project">
+                                <div className="project list_item">
                                     <div className="screen-shot">
                                         <img
                                             className="image"
@@ -103,7 +104,7 @@ class Home extends Component {
                                     '/project/twinBridgesLake'
                                 }
                             >
-                                <div className="project">
+                                <div className="project list_item">
                                     <div className="screen-shot">
                                         <img
                                             className="image"
@@ -123,7 +124,7 @@ class Home extends Component {
                             <Link
                                 to={VARS.routePrefix + '/project/culturaLink'}
                             >
-                                <div className="project">
+                                <div className="project list_item">
                                     <div className="screen-shot">
                                         <img
                                             className="image"
@@ -141,7 +142,7 @@ class Home extends Component {
                                 </div>
                             </Link>
                             <Link to={VARS.routePrefix + '/project/mailChimp'}>
-                                <div className="project">
+                                <div className="project list_item">
                                     <div className="screen-shot">
                                         <img
                                             className="image"

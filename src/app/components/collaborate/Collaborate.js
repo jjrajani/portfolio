@@ -78,9 +78,9 @@ class Collaborate extends Component {
                         <div className="sub-header">
                             <p>Referrals</p>
                         </div>
-                        <div className="referrals">
+                        <div className="referrals list">
                             <div
-                                className="referral img"
+                                className="referral list_item img"
                                 style={{
                                     backgroundImage: `url(${fingerPoint})`
                                 }}
@@ -88,7 +88,7 @@ class Collaborate extends Component {
                             <a
                                 href="https://www.linkedin.com/in/naelalismail/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BwSPpOWrvRtmW3UTNND3aGQ%3D%3D&licu=urn%3Ali%3Acontrol%3Ad_flagship3_profile_view_base-recommendation_details_profile"
                                 alt="Nael Alismail's Linkedin"
-                                className="referral"
+                                className="referral list_item"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >

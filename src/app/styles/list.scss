@@ -1,0 +1,44 @@
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 1.6rem;
+    a {
+        width: 48%;
+        margin: 1.025rem 1% 0;
+    }
+    .list_item {
+        width: 100%;
+        background-color: white;
+        transition: background-color 1s;
+        padding-bottom: 0.6rem;
+        &:hover {
+            background-color: lighten(black, 96%);
+            p {
+                color: lighten(#701d5f, 10%);
+            }
+        }
+        p {
+            transition: color 0.75s;
+            margin: 0.55rem 5%;
+            font-size: 0.825rem;
+            color: #701d5f;
+            &.title {
+                font-weight: 600;
+            }
+        }
+        .screen-shot {
+            position: relative;
+            .laptop {
+                width: 90%;
+                margin: 0 10%;
+            }
+            .image {
+                position: absolute;
+                width: 64.25%;
+                top: 19%;
+                left: 22.9%;
+                border-radius: 2px;
+            }
+        }
+    }
+}
