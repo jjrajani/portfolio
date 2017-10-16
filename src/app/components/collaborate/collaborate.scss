@@ -137,7 +137,7 @@ $red: #c90059; // red
     }
 }
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 768px) {
     #collaborate {
         .top {
             padding-bottom: 55px !important;
@@ -145,13 +145,11 @@ $red: #c90059; // red
         .referral.img {
             display: none;
             visibility: hidden;
-            // width: 100%;
-            // max-width: 500px;
         }
     }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
     #collaborate {
         .top {
             display: flex;
