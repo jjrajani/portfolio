@@ -18,7 +18,7 @@ const ProjectItem = ({ project }) =>
                 {project.title}
             </p>
             <p className="language">
-                {project.langauge}
+                {project.language}
             </p>
         </div>
     </Link>;

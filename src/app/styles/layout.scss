@@ -35,7 +35,7 @@ $red: #c90059; // red
 .main-content {
     margin: 1rem 5vw;
     font-size: 0.825rem;
-    font-weight: 300;
+    font-weight: 400;
     border-top: solid 1px #cccccc;
     .sub-content {
         padding: 0.925rem 0;
@@ -84,7 +84,7 @@ $red: #c90059; // red
         }
         .blurb-wrapper {
             font-weight: 400;
-            color: lighten(black, 35%);
+            color: lighten(black, 20%);
             padding-bottom: 1.6rem;
             .blurb {
                 padding-bottom: 1rem;
