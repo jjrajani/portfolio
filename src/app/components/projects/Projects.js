@@ -25,7 +25,7 @@ class Projects extends Component {
         window.removeEventListener('scroll', this.handleScroll, false);
     };
     handleScroll = () => {
-        let isPastScrollPoint = window.scrollY > 311;
+        let isPastScrollPoint = window.scrollY > 237;
         if (isPastScrollPoint !== this.state.fixedNav) {
             this.setState({ fixedNav: isPastScrollPoint });
         }
@@ -45,9 +45,6 @@ class Projects extends Component {
                                     aria-hidden="true"
                                 />
                             </Link>
-                            <p>
-                                Here are some of my projects and personal work.
-                            </p>
                         </div>
                     </div>
                     <div className="sub-content left">

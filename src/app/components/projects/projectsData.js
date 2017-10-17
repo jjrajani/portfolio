@@ -228,37 +228,37 @@ export const PROJECTS = {
         screenShot: SCREEN_SHOTS.pineapple,
         stackLevels: ['Personal', 'Frontend'],
         technology: ['JavaScript', 'AJAX', 'HTML/CSS']
-    },
-    humdrumGrill: {
-        appTitle: 'Humdrum Grill',
-        blurb:
-            'An expample restaurant website mockup. Built during my time at The Iron Yard as practice for implementing Pixle Perfect applications.',
-        client: 'Personal',
-        details: ['Frontend Development', 'Pixel Perfect'],
-        languages: {
-            main: 'JavaScript',
-            all: ['']
-        },
-        link: 'http://tiy-humdrum-project.surge.sh/#',
-        scale: 'Personal',
-        screenShot: SCREEN_SHOTS.humdrumGrill,
-        stackLevels: ['Personal', 'Frontend'],
-        technology: ['JavaScript', 'HTML/CSS']
-    },
-    responseiveMessage: {
-        appTitle: 'Responsive Beginnings',
-        blurb:
-            'My early learnings in creating a responsive design. Built during my time at The Iron Yard.',
-        client: 'Personal',
-        details: ['Frontend Development', 'Responsive Design'],
-        languages: {
-            main: 'JavaScript',
-            all: ['']
-        },
-        link: 'http://tiy-humdrum-responsive.surge.sh/',
-        scale: 'Personal',
-        screenShot: SCREEN_SHOTS.responseiveMessage,
-        stackLevels: ['Personal', 'Frontend'],
-        technology: ['JavaScript', 'HTML/CSS']
     }
 };
+// humdrumGrill: {
+//     appTitle: 'Humdrum Grill',
+//     blurb:
+//         'An expample restaurant website mockup. Built during my time at The Iron Yard as practice for implementing Pixle Perfect applications.',
+//     client: 'Personal',
+//     details: ['Frontend Development', 'Pixel Perfect'],
+//     languages: {
+//         main: 'JavaScript',
+//         all: ['']
+//     },
+//     link: 'http://tiy-humdrum-project.surge.sh/#',
+//     scale: 'Personal',
+//     screenShot: SCREEN_SHOTS.humdrumGrill,
+//     stackLevels: ['Personal', 'Frontend'],
+//     technology: ['JavaScript', 'HTML/CSS']
+// },
+// responseiveMessage: {
+//     appTitle: 'Responsive Beginnings',
+//     blurb:
+//         'My early learnings in creating a responsive design. Built during my time at The Iron Yard.',
+//     client: 'Personal',
+//     details: ['Frontend Development', 'Responsive Design'],
+//     languages: {
+//         main: 'JavaScript',
+//         all: ['']
+//     },
+//     link: 'http://tiy-humdrum-responsive.surge.sh/',
+//     scale: 'Personal',
+//     screenShot: SCREEN_SHOTS.responseiveMessage,
+//     stackLevels: ['Personal', 'Frontend'],
+//     technology: ['JavaScript', 'HTML/CSS']
+// }
