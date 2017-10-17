@@ -146,6 +146,13 @@ $red: #c90059; // red
             align-items: flex-start;
         }
     }
+    .left {
+        width: 30%;
+        .fixed {
+            position: fixed;
+            top: 40px;
+        }
+    }
     .list {
         a {
             width: 23%;

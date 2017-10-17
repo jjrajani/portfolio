@@ -1,113 +1,41 @@
 import React, { Component } from 'react';
 import './detail.scss';
-import { PROJECTS, LAPTOP } from '../projectsData';
+import { PROJECTS } from '../projectsData';
+import * as c from './components';
+import scrollToTop from '../../hoc/scrollToTop';
 
 class Detail extends Component {
     constructor(props) {
         super(props);
-        let projectName = props.match.params.projectName;
+        let { projectName } = props.match.params;
         this.state = {
             project: PROJECTS[projectName]
         };
     }
-
-    componentDidMount() {
-        window.scrollTo(0, 0);
-    }
-
     render() {
-        let project = this.state.project;
+        let { project } = this.state;
         return (
             <div id="detail">
                 <div className="project">
                     <div className="left">
-                        <p className="app-title title">
-                            {project.appTitle}
-                        </p>
-                        <p className="size">
-                            {project.scale}
-                        </p>
-                        <p className="blurb">
-                            {project.blurb}
-                        </p>
-                        {project.astrisk
-                            ? <p className="astrisk">
-                                  {project.astrisk}
-                              </p>
-                            : null}
-                        <p>
-                            <span className="bold">Client: </span>
-                            {project.client}
-                        </p>
-                        {this._projectDetails(project.details)}
-                        {this._projectTechnology(project.technology)}
-                        {project.link
-                            ? <p>
-                                  <span className="bold">Live Site: </span>
-                                  <a href={project.link} target="blank">
-                                      {project.appTitle}
-                                  </a>
-                              </p>
-                            : null}
+                        <c.ProjectSpec project={project} />
+                        <c.DetailsSpec details={project.details} />
+                        <c.TechnologySpec technologies={project.technology} />
+                        <c.LiveSiteLink
+                            href={project.link}
+                            text={project.appTitle}
+                        />
                     </div>
                     <div className="right">
-                        <div className="screen-shot">
-                            <img
-                                className="image"
-                                src={project.screenShot}
-                                alt="CulturaLink screen shot"
-                            />
-                            <img className="laptop" src={LAPTOP} alt="Laptop" />
-                        </div>
+                        <c.ScreenShot
+                            screenShot={project.screenShot}
+                            appTitle={project.appTitle}
+                        />
                     </div>
                 </div>
             </div>
         );
     }
-
-    _projectDetails = details => {
-        details = details.map((d, i) => {
-            return (
-                <li key={i}>
-                    <p className="list-item">
-                        {d}
-                    </p>
-                </li>
-            );
-        });
-        return (
-            <ul>
-                <li className="list-head">
-                    <p className="title">
-                        <span className="bold">Details</span>
-                    </p>
-                </li>
-                {details}
-            </ul>
-        );
-    };
-
-    _projectTechnology = techs => {
-        techs = techs.map((t, i) => {
-            return (
-                <li key={i}>
-                    <p className="list-item">
-                        {t}
-                    </p>
-                </li>
-            );
-        });
-        return (
-            <ul>
-                <li className="list-head">
-                    <p className="title">
-                        <span className="bold">Technology</span>
-                    </p>
-                </li>
-                {techs}
-            </ul>
-        );
-    };
 }
 
-export default Detail;
+export default scrollToTop(Detail);

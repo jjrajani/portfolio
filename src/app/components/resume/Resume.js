@@ -1,30 +1,15 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import { setAndSendPageview } from '../../utils/googleAnalytics';
-import { VARS } from '../../VARS';
 import './resume.scss';
 import { RESUME } from './resumeData';
+import scrollToTop from '../hoc/scrollToTop';
+import googleAnalytics from '../hoc/googleAnalytics';
+import listenForScroll from '../hoc/listenForScroll';
+import PageHeader from '../page_header/PageHeader';
+
 const code = require('../../assets/code_two.png');
 
 class Resume extends Component {
-    constructor(props) {
-        super(props);
-        this.state = { fixedNav: false };
-        setAndSendPageview(window, '/resume');
-        window.addEventListener('scroll', this.handleScroll);
-    }
-    componentDidMount() {
-        window.scrollTo(0, 0);
-    }
-    componentWillUnmount() {
-        window.removeEventListener('scroll', this.handleScroll, false);
-    }
-    handleScroll = e => {
-        let isPastScrollPoint = window.scrollY > 251;
-        if (isPastScrollPoint !== this.state.fixedNav) {
-            this.setState({ fixedNav: isPastScrollPoint });
-        }
-    };
     downloadResumeLink() {
         const resumeLink =
             'https://docs.google.com/document/d/1yOKCl-K9FTa4ZWGj-j4S-yJ5dAlAgG4H0Qpb6lrJFcg/edit?usp=sharing';
@@ -105,19 +90,14 @@ class Resume extends Component {
             <div className="main-content">
                 <div id="resume">
                     <div className="sub-content top">
-                        <div className="sub-header">
-                            <p>Resum&#233;</p>
-                            <Link to={VARS.routePrefix + '/projects'}>
-                                Projects{' '}
-                                <i
-                                    className="fa fa-angle-right"
-                                    aria-hidden="true"
-                                />
-                            </Link>
-                        </div>
+                        <PageHeader
+                            direction={'next'}
+                            page="Resumé"
+                            link={{ href: '/projects', text: 'Projects' }}
+                        />
                     </div>
                     <div className="sub-content left">
-                        <div className={this.state.fixedNav ? 'fixed' : ''}>
+                        <div className={this.props.fixedNav ? 'fixed' : ''}>
                             <div className="resume_download">
                                 {this.downloadResumeLink()}
                             </div>
@@ -148,4 +128,6 @@ class Resume extends Component {
     }
 }
 
-export default Resume;
+export default scrollToTop(
+    googleAnalytics(listenForScroll(Resume, 251), '/resume')
+);

@@ -90,25 +90,8 @@
 @media screen and (min-width: 769px) {
     #resume {
         display: flex;
-        .left {
-            width: 30%;
-            .fixed {
-                position: fixed;
-                top: 40px;
-            }
-        }
         .right {
             width: 70%;
-        }
-    }
-}
-
-@media screen and (min-width: 769px) {
-    .left {
-        width: 30%;
-        .fixed {
-            position: fixed;
-            top: 40px;
         }
     }
 }
