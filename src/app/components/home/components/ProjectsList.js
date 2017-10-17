@@ -1,10 +1,16 @@
 import React from 'react';
-import PROJECTS from './projectsData';
 import ProjectItem from './ProjectItem';
+import { PROJECTS } from '../../projects/projectsData';
+const homeProjects = [
+    PROJECTS.theLabz,
+    PROJECTS.twinBridgesLake,
+    PROJECTS.culturaLink,
+    PROJECTS.mailChimp
+];
 
 const ProjectsList = () =>
     <div className="projects list">
-        {PROJECTS.map((p, i) => {
+        {homeProjects.map((p, i) => {
             return <ProjectItem project={p} key={`home_project-${i}`} />;
         })}
     </div>;

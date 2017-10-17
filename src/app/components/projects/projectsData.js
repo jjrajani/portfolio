@@ -26,6 +26,7 @@ export const PROJECTS = {
                 img: ''
             }
         ],
+        href: 'theLabz',
         languages: {
             main: 'MERN',
             all: ['Express, Bootstrap, React Bootstrap, SASS']
@@ -61,6 +62,7 @@ export const PROJECTS = {
                 img: ''
             }
         ],
+        href: 'twinBridgesLake',
         languages: {
             main: 'React',
             all: ['Bootstrap, React Bootstrap, SASS']
@@ -92,6 +94,7 @@ export const PROJECTS = {
             'Socket Connections',
             'API Design'
         ],
+        href: 'ADP',
         features: [
             {
                 title: 'Waterfall Chart',
@@ -120,13 +123,14 @@ export const PROJECTS = {
         ]
     },
     mailChimp: {
-        appTitle: 'MailChimp Annual Report',
+        appTitle: 'MailChimp',
         blurb:
             'Given only a two week time frame, a partner developer and I delivered this award winning (Most Loved Website) year-end newsletter to mailChimp in the nick of time. Lazy loading with scroll dependant animations, GIF images.',
         client: 'MailChimp, Atlanta',
         details: ['Frontend Development', 'Web Design'],
+        href: 'mailChimp',
         languages: {
-            main: 'JavaScript',
+            main: 'JavaScript / SASS',
             all: ['']
         },
         link: 'https://mailchimp.com/2016/',
@@ -142,6 +146,7 @@ export const PROJECTS = {
             'A step by step design proofing system. PSP provides promotional signage to large companies such as Barnes and Nobel and Kroger. They wanted a way to streamline the process of requesting, modifying, and aprroving image proofs. Includes an alert system for instant feedback between the client and PSP allowing faster and more accurate production and delivery.',
         client: 'PSP, Atlanta',
         details: ['Frontend Development', 'Web Design'],
+        href: 'PSP',
         languages: {
             main: 'Angular2',
             all: ['']
@@ -157,6 +162,7 @@ export const PROJECTS = {
             'ClutraLink was my first professional project. I performed as the sole frontend developer. The app is a complete business solution providing CulturaLink Interpretation Services with with video, voice, and document translation services as well as billing reports, revenue charts, client and interpreter management, permissions, and individual portals for client, admin, and interpreter access.',
         client: 'CulturaLink, Atlanta',
         details: ['Frontend Development', 'Web Design', 'Data Visualization'],
+        href: 'culturaLink',
         languages: {
             main: 'React',
             all: ['']
@@ -187,6 +193,7 @@ export const PROJECTS = {
             'Web Design',
             'Backend API Architecture'
         ],
+        href: 'myGarden',
         languages: {
             main: 'Angular',
             all: ['']
@@ -203,6 +210,7 @@ export const PROJECTS = {
             'A variation of Whack-a-Mole using Nicholas Cage\'s face!  I built this game while at The Iron Yard where placeCage.com was my instructors go to image placeholder. My first time working with DOM Manipuation, this rudamentary application is one of my favorite creations.',
         client: 'Personal',
         details: ['Frontend Development', 'Game Development'],
+        href: 'cageSmash',
         languages: {
             main: 'JavaScript',
             all: ['']
@@ -219,6 +227,7 @@ export const PROJECTS = {
             'An instagram \'clone\' I created during my time at The Iron Yard. Upload links to your favorite images.',
         client: 'Personal',
         details: ['Frontend Development', 'Responsive Design'],
+        href: 'pineapple',
         languages: {
             main: 'JavaScript',
             all: ['']
@@ -236,6 +245,7 @@ export const PROJECTS = {
 //         'An expample restaurant website mockup. Built during my time at The Iron Yard as practice for implementing Pixle Perfect applications.',
 //     client: 'Personal',
 //     details: ['Frontend Development', 'Pixel Perfect'],
+//     href: 'humdrumGrill',
 //     languages: {
 //         main: 'JavaScript',
 //         all: ['']
@@ -252,6 +262,7 @@ export const PROJECTS = {
 //         'My early learnings in creating a responsive design. Built during my time at The Iron Yard.',
 //     client: 'Personal',
 //     details: ['Frontend Development', 'Responsive Design'],
+//     href: 'responseiveMessage',
 //     languages: {
 //         main: 'JavaScript',
 //         all: ['']
