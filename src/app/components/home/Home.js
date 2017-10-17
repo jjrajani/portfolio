@@ -4,15 +4,9 @@ import './home.scss';
 import scrollToTop from '../hoc/scrollToTop';
 import googleAnalytics from '../hoc/googleAnalytics';
 import PageHeader from '../page_header/PageHeader';
-
 import * as c from './components';
 
 const logo = require('../../assets/lost-in-the-trees.png');
-const culturaLink = require('../../assets/culturalink.png');
-const theLabz = require('../../assets/the_labz.png');
-const mailChimp = require('../../assets/mail-chimp.png');
-const twinBridgesLake = require('../../assets/twin_bridges_lake.png');
-const laptop = `https://placeit.net/uploads/stage/stage_image/288/default_apple-2012-15-inch-macbook-pro-retina-big.png`;
 
 const Home = () =>
     <div className="main-content">
