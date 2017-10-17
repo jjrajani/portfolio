@@ -1,23 +1,27 @@
 import React, { Component } from 'react';
 
-export default function(ComposedComponent, modes, defaultMode) {
+export default function(ComposedComponent, defaultLink, onClick) {
     class ToggleVisibilityMode extends Component {
         constructor(props) {
             super(props);
             this.state = {
-                mode: defaultMode
+                activeLink: defaultLink
             };
         }
-        toggleVisible = key => {
-            this.setState({ mode: key });
+        onClick = link => {
+            if (onClick) {
+                onClick();
+            } else {
+                this.setState({ activeLink: link });
+            }
         };
 
         render = () => {
             return (
                 <ComposedComponent
                     {...this.props}
-                    visibileMode={this.state.mode}
-                    toggleVisible={this.toggleVisible}
+                    activeLink={this.state.activeLink}
+                    onClick={this.onClick}
                 />
             );
         };

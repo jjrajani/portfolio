@@ -31,16 +31,16 @@
         display: flex;
         flex-direction: column;
         font-weight: 300;
-        a {
+        p {
             margin: 0 0 1rem 2vw;
-            color: #701d5f;
+            color: #701d5f !important;
             cursor: pointer;
             transition: color 1s;
             &:hover {
-                color: #c90059;
+                color: #c90059 !important;
             }
             &:focus {
-                color: #c90059;
+                color: #c90059 !important;
             }
         }
     }

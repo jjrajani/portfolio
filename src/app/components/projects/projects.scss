@@ -18,7 +18,7 @@
         display: flex;
         flex-direction: column;
         p {
-            margin: 0.5rem auto 0 3vw;
+            margin: 0 0 1rem 2vw;
             color: #701d5f;
             opacity: 0.5;
             cursor: pointer;
@@ -71,7 +71,7 @@
     .projects {
         display: flex;
         flex-wrap: wrap;
-        padding-top: 1.5rem;
+        // padding-top: 1.5rem;
         .project {
             transition: background-color 1s;
             a {
@@ -135,7 +135,6 @@
             z-index: 1000;
             top: 0px;
             padding-top: 30px;
-            padding-bottom: 63px !important;
             padding-left: 5vw;
             padding-right: 5vw;
             width: 100vw;
@@ -146,7 +145,7 @@
             background-color: white;
         }
         .padded {
-            margin-top: 24px;
+            margin-top: 30px;
         }
         .sub-nav {
             flex-direction: row;

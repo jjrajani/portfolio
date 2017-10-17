@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-export default function(ComposedComponent, maxScroll) {
+export default function(ComposedComponent, maxScroll, cb) {
     class ListenForScroll extends Component {
         constructor(props) {
             super(props);
@@ -13,7 +13,12 @@ export default function(ComposedComponent, maxScroll) {
             window.removeEventListener('scroll', this.handleScroll, false);
         };
         handleScroll = () => {
-            let isPastScrollPoint = window.scrollY > maxScroll;
+            let isPastScrollPoint;
+            if (cb) {
+                isPastScrollPoint = cb();
+            } else {
+                isPastScrollPoint = window.scrollY > maxScroll;
+            }
             if (isPastScrollPoint !== this.state.fixedNav) {
                 this.setState({ fixedNav: isPastScrollPoint });
             }
