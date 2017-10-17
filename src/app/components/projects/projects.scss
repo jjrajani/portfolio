@@ -119,6 +119,41 @@
         }
     }
 }
+@media screen and (max-width: 768px) {
+    #projects {
+        .left {
+            padding-top: 30px;
+            padding-bottom: 0 !important;
+            position: relative;
+        }
+        .not-fixed {
+            border-bottom: transparent solid 1px;
+            background-color: transparent;
+        }
+        .fixed {
+            position: fixed;
+            z-index: 1000;
+            top: 0px;
+            padding-top: 30px;
+            padding-bottom: 63px !important;
+            padding-left: 5vw;
+            padding-right: 5vw;
+            width: 100vw;
+            left: 0;
+            height: 70px;
+            border-bottom: lighten(black, 80%) solid 1px;
+            transition: border 1s;
+            background-color: white;
+        }
+        .padded {
+            margin-top: 24px;
+        }
+        .sub-nav {
+            flex-direction: row;
+            justify-content: space-around;
+        }
+    }
+}
 
 @media screen and (min-width: 769px) {
     #projects {

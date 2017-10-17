@@ -16,8 +16,8 @@
     }
     .resume_download {
         font-style: normal !important;
-        margin: 0.55rem 0 1rem;
-        padding: 0.5rem 0 !important;
+        margin: 0 0 1rem;
+        padding: 0 0 0.5rem !important;
         cursor: pointer;
         a {
             color: #c90059 !important;
@@ -30,6 +30,7 @@
     .sub-nav {
         display: flex;
         flex-direction: column;
+        font-weight: 300;
         a {
             margin: 0 0 1rem 2vw;
             color: #701d5f;

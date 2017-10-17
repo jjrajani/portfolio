@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import './collaborate.scss';
 import scrollToTop from '../hoc/scrollToTop';
 import googleAnalytics from '../hoc/googleAnalytics';

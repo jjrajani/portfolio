@@ -11,6 +11,26 @@ import toggleVisibilityMode from '../hoc/toggleVisibilityMode';
 const modes = ['All', 'Professional', 'Personal', 'Frontend', 'Fullstack'];
 
 class Projects extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            fixedTop: false
+        };
+    }
+    componentDidMount() {
+        window.addEventListener('scroll', this.handleScroll);
+    }
+    componentWillUnmount() {
+        window.removeEventListener('scroll', this.handleScroll, false);
+    }
+    handleScroll = () => {
+        console.log(window.scrollY);
+        let pastScrollPoint = window.scrollY > 278;
+        if (this.state.fixedTop !== pastScrollPoint) {
+            console.log('fixing');
+            this.setState({ fixedTop: pastScrollPoint });
+        }
+    };
     render() {
         return (
             <div className="main-content">
@@ -23,7 +43,11 @@ class Projects extends Component {
                         />
                     </div>
                     <div className="sub-content left">
-                        <div className={this.props.fixedNav ? 'fixed' : ''}>
+                        <div
+                            className={
+                                this.state.fixedTop ? 'fixed' : 'not-fixed'
+                            }
+                        >
                             <SubNav
                                 modes={modes}
                                 visibileMode={this.props.visibileMode}
@@ -31,7 +55,13 @@ class Projects extends Component {
                             />
                         </div>
                     </div>
-                    <div className="sub-content right">
+                    <div
+                        className={
+                            this.state.fixedTop
+                                ? 'sub-content right padded'
+                                : 'sub-content right'
+                        }
+                    >
                         <ProjectsList visibileMode={this.props.visibileMode} />
                     </div>
                 </div>
