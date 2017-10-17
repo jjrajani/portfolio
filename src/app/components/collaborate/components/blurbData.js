@@ -16,6 +16,6 @@ export default [
     {
         title: 'We should work together',
         text:
-            ' if you enjoy hard work, continuous learning, and always being better than yesterday.'
+            ' if you enjoy hard work, continuous learning, and always being better than the day before.'
     }
 ];
