@@ -20,16 +20,15 @@ export const RESUME = [
     },
     {
         title: 'Design',
-        skills:
-            'Responsive Web Design, HTML, CSS3, SASS, Bootstrap, MaterializeCSS'
+        skills: 'Responsive Web Design, HTML, CSS3, SASS, Bootstrap'
     },
     {
         title: 'Backend',
-        skills: 'Node.js, Express, Mongoose, Sequelize, Jade/Pug'
+        skills: 'Node.js, Express, Mongoose, Sequelize'
     },
     {
         title: 'Databases',
-        skills: 'MongoDB, SQL, MySQL, Postgres'
+        skills: 'MongoDB, MySQL'
     },
     {
         title: 'Libraries',
@@ -45,7 +44,7 @@ export const RESUME = [
     },
     {
         title: 'Environments',
-        skills: 'Agile, SCRUM, Waterfall, Freelance'
+        skills: 'Agile, SCRUM, Waterfall, Freelance, Remote'
     },
     {
         title: 'Education',

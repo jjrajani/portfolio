@@ -18,13 +18,23 @@ const ContactForm = () =>
                                 <label htmlFor={f.label.for}>
                                     {f.label.text}
                                 </label>}
-                            <input
-                                type={f.input.type}
-                                name={f.input.name}
-                                id={f.input.id}
-                                placeholder={f.input.placeholder}
-                                required={f.input.required}
-                            />
+
+                            {f.input.type !== 'textarea' &&
+                                <input
+                                    type={f.input.type}
+                                    name={f.input.name}
+                                    id={f.input.id}
+                                    placeholder={f.input.placeholder}
+                                    required={f.input.required}
+                                />}
+                            {f.input.type === 'textarea' &&
+                                <textarea
+                                    type={f.input.type}
+                                    name={f.input.name}
+                                    id={f.input.id}
+                                    placeholder={f.input.placeholder}
+                                    required={f.input.required}
+                                />}
                         </li>
                     );
                 })}

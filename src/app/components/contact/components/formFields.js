@@ -32,7 +32,7 @@ const Fields = [
     {
         label: { for: 'message', text: 'Message:' },
         input: {
-            type: 'text',
+            type: 'textarea',
             name: 'message',
             id: 'message',
             placeholder: 'Message',
