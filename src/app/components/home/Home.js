@@ -34,4 +34,4 @@ const Home = () =>
         </div>
     </div>;
 
-export default scrollToTop(googleAnalytics(Home, '/home'));
+export default scrollToTop(googleAnalytics('/home', Home));

@@ -38,12 +38,13 @@
             flex-direction: row !important;
             flex-wrap: wrap;
             justify-content: space-around !important;
-            .footer_inner_left,
-            .footer_inner_right {
+            .links_col {
                 display: flex;
                 justify-content: space-around !important;
-                width: 50%;
                 flex-direction: row !important;
+                &.width_2 {
+                    width: 50%;
+                }
             }
             a {
                 min-width: 75px;
@@ -61,8 +62,7 @@
         @media screen and (max-width: 1000px) {
             &.right {
                 justify-content: flex-end !important;
-                .footer_inner_left,
-                .footer_inner_right {
+                .links_col {
                     justify-content: flex-end !important;
                 }
             }

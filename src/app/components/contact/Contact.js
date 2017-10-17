@@ -24,4 +24,4 @@ const Contact = () =>
         </div>
     </div>;
 
-export default scrollToTop(googleAnalytics(Contact, '/contact'));
+export default scrollToTop(googleAnalytics('/contact', Contact));

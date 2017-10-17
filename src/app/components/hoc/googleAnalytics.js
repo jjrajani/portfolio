@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-export default function(ComposedComponent, page) {
+export default function(page, ComposedComponent) {
     class GoogleAnalytics extends Component {
         componentDidMount() {
             this.setAndSendPageview();

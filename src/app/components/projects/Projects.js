@@ -58,11 +58,11 @@ function handleScroll() {
 
 export default scrollToTop(
     googleAnalytics(
+        '/projects',
         listenForScroll(
-            toggleVisibilityMode(Projects, 'All'),
-            null,
-            handleScroll
-        ),
-        '/projects'
+            null, // maxScrollPoint
+            handleScroll, // onScrollHandler
+            toggleVisibilityMode(Projects, 'All' /* default active link */)
+        )
     )
 );

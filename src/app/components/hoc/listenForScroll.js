@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-export default function(ComposedComponent, maxScroll, cb) {
+export default function(maxScroll, cb, ComposedComponent) {
     class ListenForScroll extends Component {
         constructor(props) {
             super(props);

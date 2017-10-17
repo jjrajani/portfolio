@@ -36,4 +36,4 @@ const Collaborate = () =>
         </div>
     </div>;
 
-export default scrollToTop(googleAnalytics(Collaborate, '/colaborate'));
+export default scrollToTop(googleAnalytics('/colaborate', Collaborate));

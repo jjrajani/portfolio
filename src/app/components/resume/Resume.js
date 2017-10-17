@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './resume.scss';
 import scrollToTop from '../hoc/scrollToTop';
 import googleAnalytics from '../hoc/googleAnalytics';
@@ -12,56 +12,54 @@ import SubNav from '../nav/SubNav';
 
 const code = require('../../assets/code_two.png');
 
-class Resume extends Component {
-    render() {
-        return (
-            <div className="main-content">
-                <div id="resume">
-                    <div className="sub-content top">
-                        <PageHeader
-                            direction={'next'}
-                            page="Resumé"
-                            link={{ href: '/projects', text: 'Projects' }}
-                        />
-                    </div>
-                    <div className="sub-content left">
-                        <div className={this.props.fixedNav ? 'fixed' : ''}>
-                            <c.ResumeLink />
-                            <SubNav
-                                links={RESUME.map(r => r.title)}
-                                visibileMode={this.props.activeLink}
-                                onClick={scrollToPosition}
-                            />
-                        </div>
-                    </div>
-                    <div className="sub-content right">
-                        <div
-                            className="resume img"
-                            style={{
-                                backgroundImage: `url(${code})`
-                            }}
-                        />
-                        <c.Skills />
-                        <c.Education />
-                        <c.Travels />
-                    </div>
+const Resume = ({ fixedNav }) =>
+    <div className="main-content">
+        <div id="resume">
+            <div className="sub-content top">
+                <PageHeader
+                    direction={'next'}
+                    page="Resumé"
+                    link={{ href: '/projects', text: 'Projects' }}
+                />
+            </div>
+            <div className="sub-content left">
+                <div className={fixedNav ? 'fixed' : ''}>
+                    <c.ResumeLink />
+                    <SubNav
+                        links={RESUME.map(r => r.title)}
+                        onClick={scrollToPosition}
+                    />
                 </div>
             </div>
-        );
-    }
-}
+            <div className="sub-content right">
+                <div
+                    className="resume img"
+                    style={{
+                        backgroundImage: `url(${code})`
+                    }}
+                />
+                <c.Skills />
+                <c.Education />
+                <c.Travels />
+            </div>
+        </div>
+    </div>;
 
-function scrollToPosition(y, e) {
-    e.preventDefault();
-    window.scrollTo(0, linkScrollPoints[y]);
+function scrollToPosition(link) {
+    window.scrollTo(0, linkScrollPoints[link]);
 }
 
 export default scrollToTop(
     googleAnalytics(
+        '/resume',
         listenForScroll(
-            toggleVisibilityMode(Resume, 'Frontend', scrollToPosition),
-            251
-        ),
-        '/resume'
+            251, // max scroll point
+            null, // use default onScroll
+            toggleVisibilityMode(
+                Resume,
+                'Frontend', // Default active Link
+                scrollToPosition // onLinkClick
+            )
+        )
     )
 );
