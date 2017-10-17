@@ -4,13 +4,13 @@ import { setAndSendPageview } from '../../utils/googleAnalytics';
 import { VARS } from '../../VARS';
 import './resume.scss';
 import { RESUME } from './resumeData';
-const code = require('../../assets/code_two.jpg');
+const code = require('../../assets/code_two.png');
 
 class Resume extends Component {
     constructor(props) {
         super(props);
-        setAndSendPageview(window, '/resume');
         this.state = { fixedNav: false };
+        setAndSendPageview(window, '/resume');
         window.addEventListener('scroll', this.handleScroll);
     }
     componentDidMount() {
@@ -20,10 +20,9 @@ class Resume extends Component {
         window.removeEventListener('scroll', this.handleScroll, false);
     }
     handleScroll = e => {
-        if (window.scrollY > 251) {
-            this.setState({ fixedNav: true });
-        } else {
-            this.setState({ fixedNav: false });
+        let isPastScrollPoint = window.scrollY > 251;
+        if (isPastScrollPoint !== this.state.fixedNav) {
+            this.setState({ fixedNav: isPastScrollPoint });
         }
     };
     downloadResumeLink() {

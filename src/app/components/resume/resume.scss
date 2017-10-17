@@ -102,3 +102,13 @@
         }
     }
 }
+
+@media screen and (min-width: 769px) {
+    .left {
+        width: 30%;
+        .fixed {
+            position: fixed;
+            top: 40px;
+        }
+    }
+}

@@ -11,14 +11,25 @@ class Projects extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            mode: 'All'
+            mode: 'All',
+            fixedNav: false
         };
         setAndSendPageview(window, '/projects');
+        window.addEventListener('scroll', this.handleScroll);
     }
 
-    componentDidMount() {
+    componentDidMount = () => {
         window.scrollTo(0, 0);
-    }
+    };
+    componentWillUnmount = () => {
+        window.removeEventListener('scroll', this.handleScroll, false);
+    };
+    handleScroll = () => {
+        let isPastScrollPoint = window.scrollY > 311;
+        if (isPastScrollPoint !== this.state.fixedNav) {
+            this.setState({ fixedNav: isPastScrollPoint });
+        }
+    };
 
     render() {
         return (
@@ -40,7 +51,9 @@ class Projects extends Component {
                         </div>
                     </div>
                     <div className="sub-content left">
-                        {this._subNav()}
+                        <div className={this.state.fixedNav ? 'fixed' : ''}>
+                            {this._subNav()}
+                        </div>
                     </div>
                     <div className="sub-content right">
                         {this._projects()}

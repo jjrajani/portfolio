@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 import { setAndSendPageview } from '../../utils/googleAnalytics';
 import { VARS } from '../../VARS';
 import './collaborate.scss';
-const collaborate = require('../../assets/collaborate.jpg');
-const fingerPoint = require('../../assets/finger_point.jpg');
+const collaborate = require('../../assets/collaborate.png');
+const fingerPoint = require('../../assets/finger_point.png');
 
 class Collaborate extends Component {
     constructor(props) {
