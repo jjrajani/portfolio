@@ -1,7 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const PageTitle = () =>
+/*
+  Toggle visibility of "I am currently seeking my next project"
+  on home page
+*/
+const jobSeeking = false;
+
+const PageTitle = () => (
     <div className="sub-content left">
         <div className="title-wrapper">
             <p className="title one">WEB DEVELOPER</p>
@@ -19,12 +25,15 @@ const PageTitle = () =>
                         coding you'll find me either playing
                         paino or planning my next excurssion.`}
             </p>
-            <p className="blurb">
-                <Link to={'/collaborate'} className="highlight">
-                    {`I am currently seeking my next project!`}
-                </Link>
-            </p>
+            {jobSeeking && (
+                <p className="blurb">
+                    <Link to={'/collaborate'} className="highlight">
+                        {`I am currently seeking my next project!`}
+                    </Link>
+                </p>
+            )}
         </div>
-    </div>;
+    </div>
+);
 
 export default PageTitle;
