@@ -4,8 +4,8 @@ import { PROJECTS } from "../../projects/projectsData";
 const homeProjects = [
   PROJECTS.myDinova,
   PROJECTS.twinBridgesLake,
-  PROJECTS.culturaLink,
-  PROJECTS.mailChimp
+  PROJECTS.cageSmash,
+  PROJECTS.ADP
 ];
 
 const ProjectsList = () => (

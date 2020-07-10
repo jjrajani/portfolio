@@ -50,38 +50,6 @@ export const PROJECTS = {
     stackLevels: ["Professional", "Frontend"],
     technology: ["React", "Redux", "SASS", "Webpack", "Cypress"]
   },
-  theLabz: {
-    appTitle: "The Labz",
-    blurb:
-      "My previous project manager approached me asking for assistance in building a protype for his first startup.  With two weeks before his first demo, I hit create-react-app and got to work on this music collaboration tool.",
-    client: "The Labz, Atlanta GA",
-    details: ["Fullstack Development", "Web Design", "Audio Visualizer"],
-    features: [
-      {
-        title: "Audio Visualizer",
-        img: ""
-      }
-    ],
-    href: "theLabz",
-    languages: {
-      main: "MERN",
-      all: ["Express, Bootstrap, React Bootstrap, SASS"]
-    },
-    link: "https://thereallabz.now.sh",
-    scale: "Rapid Prototype",
-    screenShot: SCREEN_SHOTS.theLabz,
-    stackLevels: ["Professional", "Frontend", "Fullstack"],
-    technology: [
-      "React",
-      "Redux",
-      "SASS",
-      "Express",
-      "MongoDB",
-      "Webpack",
-      "Audio Web API"
-    ]
-  },
-
   twinBridgesLake: {
     appTitle: "Twin Bridges Lake",
     blurb:
@@ -118,6 +86,23 @@ export const PROJECTS = {
       "Google Maps",
       "Flickr API"
     ]
+  },
+  cageSmash: {
+    appTitle: "cageSmash",
+    blurb:
+      "A variation of Whack-a-Mole using Nicholas Cage's face!  I built this game while at The Iron Yard where placeCage.com was my instructors go to image placeholder. My first time working with DOM Manipuation, this rudamentary application is one of my favorite creations.",
+    client: "Personal",
+    details: ["Frontend Development", "Game Development"],
+    href: "cageSmash",
+    languages: {
+      main: "JavaScript",
+      all: [""]
+    },
+    link: "http://cage-smash.surge.sh/",
+    scale: "Personal",
+    screenShot: SCREEN_SHOTS.cageSmash,
+    stackLevels: ["Personal", "Frontend"],
+    technology: ["JavaScript", "HTML/CSS"]
   },
   ADP: {
     appTitle: "ADP Monitoring Services",
@@ -158,6 +143,37 @@ export const PROJECTS = {
       "Webpack"
     ]
   },
+  theLabz: {
+    appTitle: "The Labz",
+    blurb:
+      "My previous project manager approached me asking for assistance in building a protype for his first startup.  With two weeks before his first demo, I hit create-react-app and got to work on this music collaboration tool.",
+    client: "The Labz, Atlanta GA",
+    details: ["Fullstack Development", "Web Design", "Audio Visualizer"],
+    features: [
+      {
+        title: "Audio Visualizer",
+        img: ""
+      }
+    ],
+    href: "theLabz",
+    languages: {
+      main: "MERN",
+      all: ["Express, Bootstrap, React Bootstrap, SASS"]
+    },
+    // link: "https://thereallabz.now.sh",
+    scale: "Rapid Prototype",
+    screenShot: SCREEN_SHOTS.theLabz,
+    stackLevels: ["Professional", "Frontend", "Fullstack"],
+    technology: [
+      "React",
+      "Redux",
+      "SASS",
+      "Express",
+      "MongoDB",
+      "Webpack",
+      "Audio Web API"
+    ]
+  },
   mailChimp: {
     appTitle: "MailChimp",
     blurb:
@@ -169,7 +185,7 @@ export const PROJECTS = {
       main: "JavaScript / SASS",
       all: [""]
     },
-    link: "https://mailchimp.com/2016/",
+    // link: "https://mailchimp.com/2016/",
     routeSuffix: "MailChimp",
     scale: "Small Design Centered Application",
     screenShot: SCREEN_SHOTS.mailChimp,
@@ -203,7 +219,7 @@ export const PROJECTS = {
       main: "React",
       all: [""]
     },
-    link: "http://theculturalink.com/",
+    // link: "http://theculturalink.com/",
     scale: "Large-Scale Application",
     screenShot: SCREEN_SHOTS.culturaLink,
     stackLevels: ["Professional", "Frontend", "Fullstack"],
@@ -230,28 +246,11 @@ export const PROJECTS = {
       main: "Angular",
       all: [""]
     },
-    link: "http://my-garden.surge.sh/#/",
+    // link: "http://my-garden.surge.sh/#/",
     scale: "Personal",
     screenShot: SCREEN_SHOTS.myGarden,
     stackLevels: ["Personal", "Frontend", "Fullstack"],
     technology: ["Angular", "SASS", "Adonis", "Postgress", "Gulp"]
-  },
-  cageSmash: {
-    appTitle: "cageSmash",
-    blurb:
-      "A variation of Whack-a-Mole using Nicholas Cage's face!  I built this game while at The Iron Yard where placeCage.com was my instructors go to image placeholder. My first time working with DOM Manipuation, this rudamentary application is one of my favorite creations.",
-    client: "Personal",
-    details: ["Frontend Development", "Game Development"],
-    href: "cageSmash",
-    languages: {
-      main: "JavaScript",
-      all: [""]
-    },
-    link: "http://cage-smash.surge.sh/",
-    scale: "Personal",
-    screenShot: SCREEN_SHOTS.cageSmash,
-    stackLevels: ["Personal", "Frontend"],
-    technology: ["JavaScript", "HTML/CSS"]
   },
   pineapple: {
     appTitle: "pineapple",
@@ -264,7 +263,7 @@ export const PROJECTS = {
       main: "JavaScript",
       all: [""]
     },
-    link: "http://tiy-humdrum-project-instagram-cone.surge.sh/#/",
+    // link: "http://tiy-humdrum-project-instagram-cone.surge.sh/#/",
     scale: "Personal",
     screenShot: SCREEN_SHOTS.pineapple,
     stackLevels: ["Personal", "Frontend"],
