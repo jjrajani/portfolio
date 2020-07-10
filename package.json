@@ -2,7 +2,7 @@
   "name": "portfoilo_two",
   "version": "0.2.0",
   "private": false,
-  "homepage": "http://jjrajani.github.io/Portfolio",
+  "homepage": "http://jjrajani.github.io/",
   "scripts": {
     "start-o": "react-scripts start",
     "build-o": "react-scripts build",
