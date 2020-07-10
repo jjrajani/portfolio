@@ -5,7 +5,7 @@ export const SCREEN_SHOTS = {
   ADP: require("../../assets/ADP.png"),
   mailChimp: require("../../assets/mail-chimp.png"),
   PSP: require("../../assets/PSP.png"),
-  myDinova: require("../../assets/my-dinova.png"),
+  myDinova: require("../../assets/my_dinova.png"),
   myGarden: require("../../assets/my-garden-ss.png"),
   cageSmash: require("../../assets/cage-smash-ss.png"),
   pineapple: require("../../assets/pineapple.png"),

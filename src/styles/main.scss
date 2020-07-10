@@ -1,3 +1,15 @@
+@import './app';
+@import './collaborate';
+@import './footer';
+@import './contact';
+@import './home';
+@import './nav';
+@import './project-detail';
+@import './projects';
+@import './resume';
+@import './layout';
+@import './list';
+
 * {
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
@@ -25,6 +37,3 @@ a {
     letter-spacing: 0.02rem;
     list-style: none;
 }
-
-@import 'layout.scss';
-@import 'list.scss';
