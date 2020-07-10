@@ -12,7 +12,7 @@ class ContactForm extends React.Component {
       didError: false
     };
   }
-  onSubmit = e => {
+  onSubmit = async e => {
     e.preventDefault();
     this.setState({ didSend: false, didError: false, isSending: true });
     let data = {};
@@ -23,15 +23,18 @@ class ContactForm extends React.Component {
       i++;
     }
 
-    axios
-      .post(`${process.env.REACT_APP_EMAIL_API}send-email`, data)
-      .then(res => {
-        if (res.status === 200 || res.status === 204) {
-          this.setState({ didSend: true, isSending: false, didError: false });
-        } else {
-          this.setState({ didError: true, isSending: false, didSend: false });
-        }
-      });
+    const res = await axios.post(
+      `${process.env.REACT_APP_EMAIL_API}send-email`,
+      data
+    );
+    // .then(res => {
+    console.log("res.status", res.status);
+    if (res.status === 200 || res.status === 204) {
+      this.setState({ didSend: true, isSending: false, didError: false });
+    } else {
+      this.setState({ didError: true, isSending: false, didSend: false });
+    }
+    // });
   };
   render() {
     const disabled = this.state.isSending;
