@@ -2,21 +2,27 @@ export const LAPTOP =
   "https://placeit.net/uploads/stage/stage_image/288/default_apple-2012-15-inch-macbook-pro-retina-big.png";
 export const SCREEN_SHOTS = {
   culturaLink: require("../../assets/culturalink.png"),
+  culturaLinkSm: require("../../assets/culturalink_small.png"),
   ADP: require("../../assets/ADP.png"),
   ADPSm: require("../../assets/ADP_small.png"),
   mailChimp: require("../../assets/mail-chimp.png"),
+  mailChimpSm: require("../../assets/mail-chimp_small.png"),
   PSP: require("../../assets/PSP.png"),
+  PSPSm: require("../../assets/PSP_small.png"),
   myDinova: require("../../assets/my_dinova.png"),
   myDinovaSm: require("../../assets/my_dinova_small.png"),
   myGarden: require("../../assets/my-garden-ss.png"),
+  myGardenSm: require("../../assets/my-garden-ss_small.png"),
   cageSmash: require("../../assets/cage-smash-ss.png"),
   cageSmashSm: require("../../assets/cage-smash-ss_small.png"),
   pineapple: require("../../assets/pineapple.png"),
+  pineappleSm: require("../../assets/pineapple_small.png"),
   humdrumGrill: require("../../assets/humdrum_grill.png"),
   responseiveMessage: require("../../assets/responseive_message.png"),
   twinBridgesLake: require("../../assets/twin_bridges_lake.png"),
   twinBridgesLakeSm: require("../../assets/twin_bridges_lake_small.png"),
-  theLabz: require("../../assets/the_labz.png")
+  theLabz: require("../../assets/the_labz.png"),
+  theLabzSm: require("../../assets/the_labz_small.png")
 };
 export const PROJECTS = {
   myDinova: {
@@ -171,6 +177,7 @@ export const PROJECTS = {
     // link: "https://thereallabz.now.sh",
     scale: "Rapid Prototype",
     screenShot: SCREEN_SHOTS.theLabz,
+    screenShotSmall: SCREEN_SHOTS.theLabzSm,
     stackLevels: ["Professional", "Frontend", "Fullstack"],
     technology: [
       "React",
@@ -197,6 +204,7 @@ export const PROJECTS = {
     routeSuffix: "MailChimp",
     scale: "Small Design Centered Application",
     screenShot: SCREEN_SHOTS.mailChimp,
+    screenShotSmall: SCREEN_SHOTS.mailChimpSm,
     stackLevels: ["Professional", "Frontend"],
     technology: ["JavaScript", "SASS"]
   },
@@ -213,6 +221,7 @@ export const PROJECTS = {
     },
     scale: "Large-Scale Application",
     screenShot: SCREEN_SHOTS.PSP,
+    screenShotSmall: SCREEN_SHOTS.PSPSm,
     stackLevels: ["Professional", "Frontend"],
     technology: ["Agnular2", ".NET Core", "SASS", "Gulp"]
   },
@@ -230,6 +239,7 @@ export const PROJECTS = {
     // link: "http://theculturalink.com/",
     scale: "Large-Scale Application",
     screenShot: SCREEN_SHOTS.culturaLink,
+    screenShotSmall: SCREEN_SHOTS.culturaLinkSm,
     stackLevels: ["Professional", "Frontend", "Fullstack"],
     technology: [
       "React",
@@ -257,6 +267,7 @@ export const PROJECTS = {
     // link: "http://my-garden.surge.sh/#/",
     scale: "Personal",
     screenShot: SCREEN_SHOTS.myGarden,
+    screenShotSmall: SCREEN_SHOTS.myGardenSm,
     stackLevels: ["Personal", "Frontend", "Fullstack"],
     technology: ["Angular", "SASS", "Adonis", "Postgress", "Gulp"]
   },
@@ -273,7 +284,8 @@ export const PROJECTS = {
     },
     // link: "http://tiy-humdrum-project-instagram-cone.surge.sh/#/",
     scale: "Personal",
-    screenShot: SCREEN_SHOTS.pineapple,
+    screenShot: SCREEN_SHOTS.myGarden,
+    screenShotSmall: SCREEN_SHOTS.pineappleSm,
     stackLevels: ["Personal", "Frontend"],
     technology: ["JavaScript", "AJAX", "HTML/CSS"]
   }
