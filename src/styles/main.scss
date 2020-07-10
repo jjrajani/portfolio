@@ -1,3 +1,4 @@
+@import './colors';
 @import './app';
 @import './collaborate';
 @import './footer';
@@ -36,4 +37,8 @@ a {
     text-decoration: none;
     letter-spacing: 0.02rem;
     list-style: none;
+}
+
+p.error {
+  color: $red;
 }

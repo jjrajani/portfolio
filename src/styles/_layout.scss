@@ -1,4 +1,3 @@
-$red: #c90059; // red
 .highlight {
     color: $red !important;
 }
@@ -20,7 +19,7 @@ $red: #c90059; // red
         align-items: center;
         p,
         a {
-            color: #701d5f;
+            color: $dark_purple;
             opacity: 0.5;
             transition: opacity 0.75s;
         }
@@ -46,7 +45,7 @@ $red: #c90059; // red
                 font-size: 1.95rem;
                 font-family: 'Oxygen', sans-serif;
                 color: lighten(black, 20%);
-                color: #701d5f;
+                color: $dark_purple;
                 &.one {
                 }
                 &.two {
@@ -74,7 +73,7 @@ $red: #c90059; // red
             }
             p,
             a {
-                color: #701d5f;
+                color: $dark_purple;
                 transition: opacity 0.5s;
                 opacity: 0.5;
             }
@@ -91,7 +90,7 @@ $red: #c90059; // red
                 line-height: 1.15rem;
                 .bold {
                     // border: solid blue 3px;
-                    color: #701d5f;
+                    color: $dark_purple;
                     font-weight: 600;
                     // color: $red;
                     opacity: 0.6;

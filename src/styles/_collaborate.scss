@@ -1,4 +1,4 @@
-$red: #c90059; // red
+
 #collaborate {
     .collaborate-image {
         img {
@@ -24,7 +24,7 @@ $red: #c90059; // red
             &:hover {
                 p.title,
                 p.language {
-                    color: lighten(#701d5f, 10%) !important;
+                    color: lighten($dark_purple, 10%) !important;
                 }
             }
             p {
@@ -32,7 +32,7 @@ $red: #c90059; // red
                 margin: 0 5%;
                 &.title,
                 &.language {
-                    color: #701d5f !important;
+                    color: $dark_purple !important;
                 }
             }
             .text {

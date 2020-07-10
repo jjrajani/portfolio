@@ -33,7 +33,7 @@
         font-weight: 300;
         p {
             margin: 0 0 1rem 2vw;
-            color: #701d5f !important;
+            color: $dark_purple !important;
             cursor: pointer;
             transition: color 1s;
             &:hover {

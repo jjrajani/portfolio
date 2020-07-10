@@ -1,8 +1,3 @@
-// BC0097 bright purple
-// 701D5F dark purple
-// 936080 mid grey purple
-// 9B768E light purple
-$red: #c90059; // red
 #nav {
     display: flex;
     a {
@@ -11,7 +6,7 @@ $red: #c90059; // red
         font-size: 0.8rem;
         transition: opacity 0.5s;
         font-weight: normal;
-        color: #701d5f;
+        color: $dark_purple;
         &.active {
             border-bottom: solid 1px #cccccc;
             color: #c90059;

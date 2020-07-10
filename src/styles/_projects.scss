@@ -19,7 +19,7 @@
         flex-direction: column;
         p {
             margin: 0 0 1rem 2vw;
-            color: #701d5f;
+            color: $dark_purple;
             opacity: 0.5;
             cursor: pointer;
             transition: opacity 1s;
@@ -82,7 +82,7 @@
             &:hover {
                 background-color: lighten(black, 98%);
                 p {
-                    color: lighten(#701d5f, 10%);
+                    color: lighten($dark_purple, 10%);
                 }
             }
             @media screen and (min-width: 481px) {
@@ -96,7 +96,7 @@
             }
             p {
                 transition: color 0.75s;
-                color: #701d5f;
+                color: $dark_purple;
                 margin: 0.55rem 5%;
                 font-size: 0.8rem;
                 &.title {

@@ -12,9 +12,14 @@
     .left > .sub-header {
         flex-direction: column;
     }
+    p.error {
+      line-height: 1.3;
+      a {
+        color: $dark_purple;
+      }
+    }
     .sub-header {
-        .phone,
-        .email {
+        .phone {
             margin: 2rem 0 0 0;
         }
         .phone,
@@ -35,7 +40,10 @@
     .message {
         font-size: 1.85rem;
         margin: 1.1rem 0;
-        color: #701d5f;
+        color: $dark_purple;
+    }
+    .form-wrapper {
+      position: relative;
     }
     form {
         ul {
@@ -92,13 +100,24 @@
             color: #c90059;
             cursor: pointer;
             transition: background-color 1s;
-            &:hover {
+            &:hover:not(:disabled) {
                 background-color: rgba(240, 240, 240, 0.8);
                 -webkit-box-shadow: 2px 2px 5px 2px rgba(250, 250, 250, 0.8);
                 -moz-box-shadow: 2px 2px 5px 2px rgba(250, 250, 250, 0.8);
                 box-shadow: 2px 2px 5px 2px rgba(250, 250, 250, 0.8);
             }
+
+            &:disabled {
+              color: grey;
+              border-color: grey;
+              background-color: rgba(240, 240, 240, 0.8);
+              cursor: default;
+            }
         }
+    }
+    #thankyou_message {
+      font-size: 1.5rem;
+      color: $dark_purple;
     }
 }
 @media screen and (min-width: 769px) {

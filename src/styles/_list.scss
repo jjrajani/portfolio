@@ -14,14 +14,14 @@
         &:hover {
             background-color: lighten(black, 96%);
             p {
-                color: lighten(#701d5f, 10%);
+                color: lighten($dark_purple, 10%);
             }
         }
         p {
             transition: color 0.75s;
             margin: 0.55rem 5%;
             font-size: 0.825rem;
-            color: #701d5f;
+            color: $dark_purple;
             &.title {
                 font-weight: 600;
             }
