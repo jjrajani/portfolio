@@ -3,15 +3,19 @@ export const LAPTOP =
 export const SCREEN_SHOTS = {
   culturaLink: require("../../assets/culturalink.png"),
   ADP: require("../../assets/ADP.png"),
+  ADPSm: require("../../assets/ADP_small.png"),
   mailChimp: require("../../assets/mail-chimp.png"),
   PSP: require("../../assets/PSP.png"),
   myDinova: require("../../assets/my_dinova.png"),
+  myDinovaSm: require("../../assets/my_dinova_small.png"),
   myGarden: require("../../assets/my-garden-ss.png"),
   cageSmash: require("../../assets/cage-smash-ss.png"),
+  cageSmashSm: require("../../assets/cage-smash-ss_small.png"),
   pineapple: require("../../assets/pineapple.png"),
   humdrumGrill: require("../../assets/humdrum_grill.png"),
   responseiveMessage: require("../../assets/responseive_message.png"),
   twinBridgesLake: require("../../assets/twin_bridges_lake.png"),
+  twinBridgesLakeSm: require("../../assets/twin_bridges_lake_small.png"),
   theLabz: require("../../assets/the_labz.png")
 };
 export const PROJECTS = {
@@ -47,6 +51,7 @@ export const PROJECTS = {
     link: "https://apps.dinova.com",
     scale: "Large-Scale Application",
     screenShot: SCREEN_SHOTS.myDinova,
+    screenShotSmall: SCREEN_SHOTS.myDinovaSm,
     stackLevels: ["Professional", "Frontend"],
     technology: ["React", "Redux", "SASS", "Webpack", "Cypress"]
   },
@@ -74,6 +79,7 @@ export const PROJECTS = {
     link: "http://www.twinbridgeslake.fish",
     scale: "Small Business Solution",
     screenShot: SCREEN_SHOTS.twinBridgesLake,
+    screenShotSmall: SCREEN_SHOTS.twinBridgesLakeSm,
     stackLevels: ["Professional", "Frontend", "Fullstack"],
     technology: [
       "React",
@@ -101,6 +107,7 @@ export const PROJECTS = {
     link: "http://cage-smash.surge.sh/",
     scale: "Personal",
     screenShot: SCREEN_SHOTS.cageSmash,
+    screenShotSmall: SCREEN_SHOTS.cageSmashSm,
     stackLevels: ["Personal", "Frontend"],
     technology: ["JavaScript", "HTML/CSS"]
   },
@@ -132,6 +139,7 @@ export const PROJECTS = {
     },
     scale: "Large-Scale Application",
     screenShot: SCREEN_SHOTS.ADP,
+    screenShotSmall: SCREEN_SHOTS.ADPSm,
     stackLevels: ["Professional", "Frontend", "Fullstack"],
     technology: [
       "React",
