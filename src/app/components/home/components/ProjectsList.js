@@ -2,10 +2,10 @@ import React from "react";
 import ProjectItem from "./ProjectItem";
 import { PROJECTS } from "../../projects/projectsData";
 const homeProjects = [
+  PROJECTS.eureka,
   PROJECTS.myDinova,
   PROJECTS.twinBridgesLake,
-  PROJECTS.cageSmash,
-  PROJECTS.ADP
+  PROJECTS.cageSmash
 ];
 
 const ProjectsList = () => (

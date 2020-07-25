@@ -3,6 +3,8 @@ export const LAPTOP =
 export const SCREEN_SHOTS = {
   culturaLink: require("../../assets/culturalink.png"),
   culturaLinkSm: require("../../assets/culturalink_small.png"),
+  eureka: require("../../assets/eureka_meal_planner.png"),
+  eurekaSm: require("../../assets/eureka_meal_planner_small.png"),
   ADP: require("../../assets/ADP.png"),
   ADPSm: require("../../assets/ADP_small.png"),
   mailChimp: require("../../assets/mail-chimp.png"),
@@ -25,6 +27,34 @@ export const SCREEN_SHOTS = {
   theLabzSm: require("../../assets/the_labz_small.png")
 };
 export const PROJECTS = {
+  eureka: {
+    appTitle: "Eureka Holistic Nutrition",
+    blurb:
+      "A meal planner app created for Eureka Holistic Nutrition.  Generates a personalized meal plan PDF from the user's provided input.  Integrated with WordPress.",
+    client: "Eureka Holistic Nutrition",
+    details: ["Frontend", "Backend"],
+    features: [
+      {
+        title: "MailChimp",
+        img: ""
+      },
+      {
+        title: "pdf-lib",
+        img: ""
+      }
+    ],
+    href: "eureka",
+    languages: {
+      main: "JavaScript",
+      all: []
+    },
+    link: "http://eurekaholisticnutrition.com/meal-planner",
+    scale: "Small Business Tool",
+    screenShot: SCREEN_SHOTS.eureka,
+    screenShotSmall: SCREEN_SHOTS.eurekaSm,
+    stackLevels: ["Professional", "Frontend", "Fullstack"],
+    technology: ["React", "Redux", "SASS", "Webpack", "Express", "Wordpress"]
+  },
   myDinova: {
     appTitle: "myDinova",
     blurb:
